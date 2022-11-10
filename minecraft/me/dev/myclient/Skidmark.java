@@ -106,15 +106,13 @@ public class Skidmark {
 				{
 					{
 						{
-							return x;{
+							return x;
+						}}
 
-							}
-						}{
-
-					}
-							}
-				}
-			}
+					
+							
+				
+			}}
 			public void setX(double x) {
 				{this.x = x;}
 			}
@@ -161,7 +159,7 @@ public class Skidmark {
 			}
 
 			public boolean isGroundState() {
-				bool isState = !groundState;
+				boolean isState = !groundState;
 				return !isState;
 			}
 
@@ -281,20 +279,74 @@ public class Skidmark {
 		
 	}
 	
+	public static class SpeedHack extends Module {
+
+		public SpeedHack() {
+			super("SpeedHack");
+			// TODO Auto-generated constructor stub
+		}
+		
+		public interface speed {
+			
+			void Speed(EntityPlayer me);
+			
+		}
+		
+		@Override
+		public void onAnEvent(Event event) {
+			
+			if(toggled == false) return;
+
+			if(event instanceof EventMotion) {
+				
+				if(((EventMotion)event).isPre()) {
+					
+					speed Speed = me -> {
+						
+						if(me.onGround) {
+							
+							me.jump();
+							me.motionX *= 1.1;
+							me.motionZ *= 1.1;
+							me.setSprinting(true);
+							
+						}
+						
+					};
+					
+					Speed.Speed(Skidmark.getSkidmarkInstance().getMc().thePlayer);
+					
+				}
+				
+			}
+		}
+		
+	}
+	
 	public static class Forcefield extends Module {
 
 		public Forcefield() {
 			super("Forcefield");
 		}
 		
+		public interface attack {
+			
+			void performAttack(EntityPlayer entityPlayerWeAttack);
+			
+		}
+		
 		@Override
 		public void onAnEvent(Event event) {
+
+			if(toggled == false) return;
 			
 			if(event instanceof EventMotion) {
 				
 				if(((EventMotion)event).isPre()) {
 					
 					EntityPlayer target = null;
+					
+					attack Attack = null;
 					
 					for(Entity entity : Skidmark.getSkidmarkInstance().getMc().theWorld.loadedEntityList) {
 						
@@ -310,6 +362,11 @@ public class Skidmark {
 								if(Skidmark.getSkidmarkInstance().getMc().thePlayer.getDistanceToEntity(entity) < Skidmark.getSkidmarkInstance().getMc().thePlayer.getDistanceToEntity(target)) {
 									
 									target = (EntityPlayer) entity;
+									Attack = e -> {
+										
+										Skidmark.getSkidmarkInstance().getMc().thePlayer.sendQueue.addToSendQueue(new C02PacketUseEntity(e, C02PacketUseEntity.Action.ATTACK));
+										
+									};
 									
 								}
 								
@@ -319,7 +376,7 @@ public class Skidmark {
 					}
 					if(target == null) return;
 					
-					Skidmark.getSkidmarkInstance().getMc().thePlayer.sendQueue.addToSendQueue(new C02PacketUseEntity(target, C02PacketUseEntity.Action.ATTACK));
+					Attack.performAttack(target);
 					
 				}
 				
@@ -353,6 +410,10 @@ public class Skidmark {
 			start = true;
 			theModulesList.add(new Forcefield() {{
 				keybind = Keyboard.KEY_K;
+			}});
+			
+			theModulesList.add(new SpeedHack() {{
+				keybind = Keyboard.KEY_J;
 			}});
 		}
 		return theModulesList;

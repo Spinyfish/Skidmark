@@ -1190,7 +1190,7 @@ public class EntityRenderer implements IResourceManagerReloadListener
             	
             	if(module.toggled == true) {
             		
-            		Skidmark.getSkidmarkInstance().getMc().fontRendererObj.drawStringWithShadow(module.name, y, 20, -1);
+            		Skidmark.getSkidmarkInstance().getMc().fontRendererObj.drawStringWithShadow(module.name, 20, y, -1);
             		
             		for(int i = 0; i < 10; ++i) ++y;
             		
