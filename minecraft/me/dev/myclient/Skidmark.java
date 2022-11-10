@@ -1,8 +1,15 @@
 package me.dev.myclient;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.lwjgl.input.Keyboard;
+
+import me.dev.myclient.Skidmark.Event.EventMotion;
 import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.network.Packet;
 import net.minecraft.network.play.client.C00PacketKeepAlive;
 import net.minecraft.network.play.client.C01PacketChatMessage;
@@ -29,20 +36,28 @@ import net.minecraft.network.play.client.C19PacketResourcePackStatus;
 
 public class Skidmark {
 
-	public Minecraft mc;
+	public static Minecraft mc;
 	
 	public static Skidmark SkidmarkInstance = new Skidmark(Minecraft.getMinecraft());
 	
-	public static ArrayList<Module> theModulesList = new ArrayList<>();
+	public static CopyOnWriteArrayList<Module> theModulesList;
+	
+	public static boolean start = false;
 	
 	public Skidmark(Minecraft minecraft) {
 		mc = minecraft;
 		if(minecraft == null) {
 			mc = Minecraft.getMinecraft();
 		}
+		
+		new Forcefield() {{
+			keybind = Keyboard.KEY_K;
+		}};
+		
 	}
 	
-	public static void onTheEvent(Event e, boolean lambda) {
+	public static void onTheEvent(Event e, boolean lambda) throws IOException {
+		if(!start) return;
 		if(lambda) {
 			theModulesList.forEach(Module -> {
 				
@@ -228,11 +243,61 @@ public class Skidmark {
 		public boolean toggled;
 		public String name;
 		
+		public int keybind;
+		
 		public Module(String name) {
 			this.name = name;
 		}
 		
 		public void onAnEvent(Event event) {
+			
+		}
+		
+	}
+	
+	public static class Forcefield extends Module {
+
+		public Forcefield() {
+			super("Forcefield");
+		}
+		
+		@Override
+		public void onAnEvent(Event event) {
+			
+			if(event instanceof EventMotion) {
+				
+				if(((EventMotion)event).isPre()) {
+					
+					EntityPlayer target = null;
+					
+					for(Entity entity : Skidmark.getSkidmarkInstance().getMc().theWorld.loadedEntityList) {
+						
+						if(entity == Skidmark.getSkidmarkInstance().getMc().thePlayer) continue;
+						
+						if(entity instanceof EntityPlayer) {
+							System.out.println("Player found!");
+							Entity player = Skidmark.getSkidmarkInstance().getMc().thePlayer;
+							if(target == player) continue;
+							
+							if(target == null) target = (EntityPlayer) entity; else {
+								
+								if(Skidmark.getSkidmarkInstance().getMc().thePlayer.getDistanceToEntity(entity) < Skidmark.getSkidmarkInstance().getMc().thePlayer.getDistanceToEntity(target)) {
+									
+									target = (EntityPlayer) entity;
+									
+								}
+								
+							}
+						}
+						
+					}
+					if(target == null) return;
+					
+					Skidmark.getSkidmarkInstance().getMc().thePlayer.sendQueue.addToSendQueue(new C02PacketUseEntity(target, C02PacketUseEntity.Action.ATTACK));
+					
+				}
+				
+			}
 			
 		}
 		
@@ -256,11 +321,18 @@ public class Skidmark {
 		SkidmarkInstance = skidmarkInstance;
 	}
 
-	public static ArrayList<Module> getTheModulesList() {
+	public static CopyOnWriteArrayList<Module> getTheModulesList() {
+		if(theModulesList == null && !start) {
+			theModulesList = new CopyOnWriteArrayList<>();
+			start = true;
+			theModulesList.add(new Forcefield() {{
+				keybind = Keyboard.KEY_K;
+			}});
+		}
 		return theModulesList;
 	}
 
-	public static void setTheModulesList(ArrayList<Module> theModulesList) {
+	public static void setTheModulesList(CopyOnWriteArrayList<Module> theModulesList) {
 		Skidmark.theModulesList = theModulesList;
 	}
 }

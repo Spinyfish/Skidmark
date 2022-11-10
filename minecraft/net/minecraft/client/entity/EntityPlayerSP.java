@@ -1,5 +1,7 @@
 package net.minecraft.client.entity;
 
+import java.io.IOException;
+
 import me.dev.myclient.Skidmark;
 import me.dev.myclient.Skidmark.Event.EventMotion;
 import net.minecraft.client.Minecraft;
@@ -194,7 +196,12 @@ public class EntityPlayerSP extends AbstractClientPlayer
 
         EventMotion move = new EventMotion(this.posX, this.posY, this.posZ, this.rotationYaw, this.rotationPitch, this.onGround, true);
         
-        Skidmark.getSkidmarkInstance().onTheEvent(move, this.onGround);
+        try {
+			Skidmark.getSkidmarkInstance().onTheEvent(move, this.onGround);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         
         double newX = move.getX();
         double newY = move.getY();

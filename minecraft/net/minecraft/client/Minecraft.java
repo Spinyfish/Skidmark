@@ -13,6 +13,9 @@ import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.properties.Property;
 import com.mojang.authlib.properties.PropertyMap;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
+
+import me.dev.myclient.Skidmark;
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -545,6 +548,9 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         GlStateManager.loadIdentity();
         GlStateManager.matrixMode(5888);
         this.checkGLError("Startup");
+        
+        Skidmark.getSkidmarkInstance().getTheModulesList();
+        
         this.textureMapBlocks = new TextureMap("textures");
         this.textureMapBlocks.setMipmapLevels(this.gameSettings.mipmapLevels);
         this.renderEngine.loadTickableTexture(TextureMap.locationBlocksTexture, this.textureMapBlocks);
@@ -1909,6 +1915,13 @@ public class Minecraft implements IThreadListener, IPlayerUsage
                 if (Keyboard.getEventKeyState())
                 {
                     KeyBinding.onTick(k);
+                    
+                    for(me.dev.myclient.Skidmark.Module module : Skidmark.getSkidmarkInstance().theModulesList) {
+                    	
+                    	if(module.keybind == k) module.toggled = module.toggled ? false : true;
+                    	
+                    }
+                    
                 }
 
                 if (this.debugCrashKeyPressTime > 0L)
