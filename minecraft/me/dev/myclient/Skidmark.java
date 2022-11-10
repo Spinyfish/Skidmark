@@ -62,7 +62,7 @@ public class Skidmark {
 		
 	}
 	
-	public class Event {
+	public static class Event {
 		public boolean stopped = false;
 		public boolean noDataCarried = false;
 		public void set_Stopped(boolean state) {
@@ -72,7 +72,7 @@ public class Skidmark {
 			if(stopped) return true; else return false;
 		}
 		
-		public class EventMotion extends Event {
+		public static class EventMotion extends Event {
 			public double x;
 			public double y;
 			public double z;
@@ -141,7 +141,7 @@ public class Skidmark {
 			
 		}
 
-		public class EventRenderHUD extends Event {
+		public static class EventRenderHUD extends Event {
 			
 			public EventRenderHUD() {
 				// this means that there is no data that is going to be carried and transmitted
@@ -223,7 +223,7 @@ public class Skidmark {
 		
 	}
 	
-	public class Module {
+	public static class Module {
 		
 		public boolean toggled;
 		public String name;

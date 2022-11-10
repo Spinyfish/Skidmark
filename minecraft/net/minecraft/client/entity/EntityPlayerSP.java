@@ -1,5 +1,7 @@
 package net.minecraft.client.entity;
 
+import me.dev.myclient.Skidmark;
+import me.dev.myclient.Skidmark.Event.EventMotion;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.MovingSoundMinecartRiding;
 import net.minecraft.client.audio.PositionedSoundRecord;
@@ -190,6 +192,17 @@ public class EntityPlayerSP extends AbstractClientPlayer
     {
         boolean flag = this.isSprinting();
 
+        EventMotion move = new EventMotion(this.posX, this.posY, this.posZ, this.rotationYaw, this.rotationPitch, this.onGround, true);
+        
+        Skidmark.getSkidmarkInstance().onTheEvent(move, this.onGround);
+        
+        double newX = move.getX();
+        double newY = move.getY();
+        double newZ = move.getZ();
+        double newYaw = move.getYawRotation();
+        double newPitch = move.getPitchRotation();
+        boolean newGround = move.isGroundState();
+        
         if (flag != this.serverSprintState)
         {
             if (flag)
@@ -234,19 +247,19 @@ public class EntityPlayerSP extends AbstractClientPlayer
             {
                 if (flag2 && flag3)
                 {
-                    this.sendQueue.addToSendQueue(new C03PacketPlayer.C06PacketPlayerPosLook(this.posX, this.getEntityBoundingBox().minY, this.posZ, this.rotationYaw, this.rotationPitch, this.onGround));
+                    this.sendQueue.addToSendQueue(new C03PacketPlayer.C06PacketPlayerPosLook(newX, newY, newZ, (float) newYaw, (float) newPitch, newGround));
                 }
                 else if (flag2)
                 {
-                    this.sendQueue.addToSendQueue(new C03PacketPlayer.C04PacketPlayerPosition(this.posX, this.getEntityBoundingBox().minY, this.posZ, this.onGround));
+                    this.sendQueue.addToSendQueue(new C03PacketPlayer.C04PacketPlayerPosition(newX, newY, newZ, newGround));
                 }
                 else if (flag3)
                 {
-                    this.sendQueue.addToSendQueue(new C03PacketPlayer.C05PacketPlayerLook(this.rotationYaw, this.rotationPitch, this.onGround));
+                    this.sendQueue.addToSendQueue(new C03PacketPlayer.C05PacketPlayerLook((float) newYaw, (float) newPitch, newGround));
                 }
                 else
                 {
-                    this.sendQueue.addToSendQueue(new C03PacketPlayer(this.onGround));
+                    this.sendQueue.addToSendQueue(new C03PacketPlayer(newGround));
                 }
             }
             else
