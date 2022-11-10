@@ -59,6 +59,22 @@ public class Skidmark {
 	
 	public static void onTheEvent(Event e, boolean lambda) throws IOException {
 		if(!start) return;
+		
+		if(e instanceof EventSendPacket) {
+			
+			if(((EventSendPacket)e).getData() instanceof C01PacketChatMessage) {
+				
+				Packet p = ((EventSendPacket)e).getData();
+				
+				if(
+						CommandHandler.scanMessage((((C01PacketChatMessage)p).getMessage()))) {
+					e.set_Stopped(true);
+				}
+				
+			}
+			
+		}
+		
 		if(lambda) {
 			theModulesList.forEach(Module -> {
 				{}
@@ -365,6 +381,52 @@ public class Skidmark {
 					Attack.performAttack(target);
 				}}}}
 
+	public static class CommandHandler {
+		
+		public static boolean scanMessage(String content) {
+			
+			if(content.equals(".toggle Forcefield")) {
+				
+				for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModulesList) {
+					
+					if(module.name.equals("Forcefield")) {
+						module.toggled = !module.toggled;
+						return true;
+					}
+					
+				}
+				
+			} else if(content.equals(".toggle Speed") || content.equals(".toggle SpeedHack")) {
+				
+				for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModulesList) {
+					
+					if(module.name.equals("SpeedHack")) {
+						module.toggled = !module.toggled;
+						return true;
+					}
+					
+				}
+				
+			} else if(content.equals(".toggle Velocity") || content.equals(".toggle No Knockback")) {
+				
+				for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModulesList) {
+					
+					if(module.name.equals("No Knockback")) {
+						module.toggled = !module.toggled;
+						return true;
+					}
+					
+				}
+				
+			}
+			
+			
+			return false;
+			
+		}
+		
+	}
+	
 	public Minecraft getMc() {
 		setMc(mc);
 		return mc;
