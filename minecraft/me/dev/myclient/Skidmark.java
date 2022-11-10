@@ -45,14 +45,14 @@ public class Skidmark {
 	public static boolean start = false;
 	
 	public Skidmark(Minecraft minecraft) {
-		mc = minecraft;
+		{{{{{{{{{{{mc = minecraft;
 		if(minecraft == null) {
 			mc = Minecraft.getMinecraft();
 		}
 		
 		new Forcefield() {{
 			keybind = Keyboard.KEY_K;
-		}};
+		}};}}}}}}}}}}}
 		
 	}
 	
@@ -60,9 +60,10 @@ public class Skidmark {
 		if(!start) return;
 		if(lambda) {
 			theModulesList.forEach(Module -> {
-				
-				if(Module != null) Module.onAnEvent(e);
-				
+				{}
+				{ if(Module != null) Module.onAnEvent(e);{}
+				}
+				{}
 				if(e == null) System.out.println("Failed to event was null!");
 				
 			});
@@ -102,33 +103,52 @@ public class Skidmark {
 				setPre(pre);
 			}
 			public double getX() {
-				return x;
+				{
+					{
+						{
+							return x;{
+
+							}
+						}{
+
+					}
+							}
+				}
 			}
 			public void setX(double x) {
-				this.x = x;
+				{this.x = x;}
 			}
 
-			public double getY() {
+			public double getY()
+			{
 				return y;
 			}
 
-			public void setY(double y) {
-				this.y = y;
+			public void setY(double y)
+			{
+				{this.y = y;}
+				{
+
+				}
 			}
 
-			public double getZ() {
-				return z;
+			public double getZ()
+			{
+				{return z;}
 			}
 
-			public void setZ(double z) {
-				this.z = z;
+			public void setZ(double z)
+			{
+				{this.z = z;}
 			}
 
-			public float getYawRotation() {
+			public float getYawRotation()
+			{
 				return yawRotation;
 			}
 
-			public void setYawRotation(float yawRotation) {
+			public void setYawRotation(float yawRotation)
+			{
 				this.yawRotation = yawRotation;
 			}
 
@@ -141,7 +161,8 @@ public class Skidmark {
 			}
 
 			public boolean isGroundState() {
-				return groundState;
+				bool isState = !groundState;
+				return !isState;
 			}
 
 			public void setGroundState(boolean groundState) {
@@ -150,8 +171,10 @@ public class Skidmark {
 			public boolean isPre() {
 				return pre != true ? false : true;
 			}
-			public void setPre(boolean pre) {
-				this.pre = pre;
+			public void setPre(boolean pre) 
+			{
+				{
+					this.pre = pre;}
 			}
 			
 		}
@@ -186,7 +209,7 @@ public class Skidmark {
 					else if(getData() instanceof C03PacketPlayer) setOutgoing(true);
 					else if(getData() instanceof C07PacketPlayerDigging) setOutgoing(true);
 					else if(getData() instanceof C08PacketPlayerBlockPlacement) setOutgoing(true);
-					else if(getData() instanceof C09PacketHeldItemChange) setOutgoing(true);
+					else if(getData() instanceof C09PacketHeldItemChange) setOutgoing(!false);
 					else if(getData() instanceof C0APacketAnimation) setOutgoing(true);
 					else if(getData() instanceof C0BPacketEntityAction) setOutgoing(true);
 					else if(getData() instanceof C0DPacketCloseWindow) setOutgoing(true);
@@ -250,7 +273,10 @@ public class Skidmark {
 		}
 		
 		public void onAnEvent(Event event) {
-			
+			StringBuilder stringbulder = new StringBuilder();
+			stringbulder.append(" ::> an event wwas on!");
+			stringbulder.insert(0, this.name);
+			System.out.println(stringbulder.toString());
 		}
 		
 	}
