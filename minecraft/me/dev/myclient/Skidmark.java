@@ -1,12 +1,12 @@
 package me.dev.myclient;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.lwjgl.input.Keyboard;
 
 import me.dev.myclient.Skidmark.Event.EventMotion;
+import me.dev.myclient.Skidmark.Event.EventSendPacket;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -33,6 +33,7 @@ import net.minecraft.network.play.client.C16PacketClientStatus;
 import net.minecraft.network.play.client.C17PacketCustomPayload;
 import net.minecraft.network.play.client.C18PacketSpectate;
 import net.minecraft.network.play.client.C19PacketResourcePackStatus;
+import net.minecraft.network.play.server.S12PacketEntityVelocity;
 
 public class Skidmark {
 
@@ -186,7 +187,7 @@ public class Skidmark {
 			
 		}
 
-		public class EventSendPacket extends Event {
+		public static class EventSendPacket extends Event {
 			
 			public Packet data;
 			public SkidmarkPacket skidmarkPacket;
@@ -323,6 +324,40 @@ public class Skidmark {
 		
 	}
 	
+	public static class Velocity extends Module {
+
+		public Velocity() {
+			super("No Knockback");
+			// TODO Auto-generated constructor stub
+		}
+		
+		@Override
+		public void onAnEvent(Event event) {
+
+			if(toggled == false) return;
+			
+			KnockbackStopper.cancelKnockback(event);
+		}
+		
+		public static class KnockbackStopper {
+			
+			public static void cancelKnockback(Event e) {
+				
+				if(e instanceof EventSendPacket) {
+					
+					if((((((EventSendPacket)e))).getData()) instanceof S12PacketEntityVelocity) {
+						
+						e.set_Stopped(true);
+						
+					}
+					
+				}
+			}
+			
+		}
+		
+	}
+	
 	public static class Forcefield extends Module {
 
 		public Forcefield() {
@@ -414,6 +449,10 @@ public class Skidmark {
 			
 			theModulesList.add(new SpeedHack() {{
 				keybind = Keyboard.KEY_J;
+			}});
+			
+			theModulesList.add(new Velocity() {{
+				keybind = Keyboard.KEY_L;
 			}});
 		}
 		return theModulesList;
