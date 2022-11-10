@@ -27,6 +27,9 @@ import io.netty.handler.timeout.TimeoutException;
 import io.netty.util.AttributeKey;
 import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
+import me.dev.myclient.Skidmark;
+import me.dev.myclient.Skidmark.Event.EventSendPacket;
+
 import java.net.InetAddress;
 import java.net.SocketAddress;
 import java.util.Queue;
@@ -152,6 +155,13 @@ public class NetworkManager extends SimpleChannelInboundHandler<Packet>
         {
             try
             {
+            	
+            	EventSendPacket p = new EventSendPacket(p_channelRead0_2_);
+            	
+            	Skidmark.getSkidmarkInstance().onTheEvent(p, false);
+            	
+            	if(p.is_Stopped()) return;
+            	
                 p_channelRead0_2_.processPacket(this.packetListener);
             }
             catch (ThreadQuickExitException var4)
