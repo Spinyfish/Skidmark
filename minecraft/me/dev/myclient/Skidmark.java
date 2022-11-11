@@ -1,6 +1,7 @@
 package me.dev.myclient;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.lwjgl.input.Keyboard;
@@ -8,6 +9,7 @@ import org.lwjgl.input.Keyboard;
 import me.dev.myclient.Skidmark.Event.EventMotion;
 import me.dev.myclient.Skidmark.Event.EventSendPacket;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.network.Packet;
@@ -333,6 +335,53 @@ public class Skidmark {
 						e.set_Stopped(true);
 					}}}}}
 	
+	public static class Flight extends Module {
+
+		public Flight() {
+			super("Flight");
+			// TODO Auto-generated constructor stub
+		}
+
+		@Override
+		public void onAnEvent(Event event) {
+			if(toggled == false) return;
+			if(event instanceof EventMotion) {
+				
+				moduleAction<EntityPlayerSP> flightCheat = me -> {
+					
+					HashMap<Integer, Double> motionMap = new HashMap<>();
+					
+					int i = 0;
+					if(i == 0) {
+						me.motionY = 0;
+						motionMap.put(i, 1.1);
+						if(i == 0) i += 1;
+					}
+					if(i == 1) {
+						motionMap.put(i, 0.42);
+						if(i == 1) i += 1;
+					}
+					if(i == 2) {
+						motionMap.put(i, 1.1);
+						if(i == 2) i += 1;
+					}
+					
+					if(me.movementInput.jump)
+					{{
+						me.motionY = motionMap.get(1);
+					}} else if (me.movementInput.sneak) {{
+						me.motionY = motionMap.get(1) * - 1;
+					}};
+					me.onGround = true;
+					
+				};
+			
+				flightCheat.perform(Skidmark.getSkidmarkInstance().getMc().thePlayer);
+				
+			}
+		}
+	}
+	
 	public static class Forcefield extends Module {
 
 		public Forcefield() {
@@ -438,6 +487,10 @@ public class Skidmark {
 			
 			theModulesList.add(new Velocity() {{
 				keybind = Keyboard.KEY_L;
+			}});
+			
+			theModulesList.add(new Flight() {{
+				keybind = Keyboard.KEY_G;
 			}});
 		}
 		return theModulesList;
