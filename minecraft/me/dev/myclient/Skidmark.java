@@ -1,19 +1,41 @@
 package me.dev.myclient;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.EntityPlayerSP;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.network.Packet;
-import net.minecraft.network.play.client.*;
-import net.minecraft.network.play.server.S12PacketEntityVelocity;
-import org.lwjgl.input.Keyboard;
-
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+
+import org.lwjgl.input.Keyboard;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.client.C00PacketKeepAlive;
+import net.minecraft.network.play.client.C01PacketChatMessage;
+import net.minecraft.network.play.client.C02PacketUseEntity;
+import net.minecraft.network.play.client.C03PacketPlayer;
+import net.minecraft.network.play.client.C07PacketPlayerDigging;
+import net.minecraft.network.play.client.C08PacketPlayerBlockPlacement;
+import net.minecraft.network.play.client.C09PacketHeldItemChange;
+import net.minecraft.network.play.client.C0APacketAnimation;
+import net.minecraft.network.play.client.C0BPacketEntityAction;
+import net.minecraft.network.play.client.C0DPacketCloseWindow;
+import net.minecraft.network.play.client.C0EPacketClickWindow;
+import net.minecraft.network.play.client.C0FPacketConfirmTransaction;
+import net.minecraft.network.play.client.C10PacketCreativeInventoryAction;
+import net.minecraft.network.play.client.C11PacketEnchantItem;
+import net.minecraft.network.play.client.C12PacketUpdateSign;
+import net.minecraft.network.play.client.C13PacketPlayerAbilities;
+import net.minecraft.network.play.client.C14PacketTabComplete;
+import net.minecraft.network.play.client.C15PacketClientSettings;
+import net.minecraft.network.play.client.C16PacketClientStatus;
+import net.minecraft.network.play.client.C17PacketCustomPayload;
+import net.minecraft.network.play.client.C18PacketSpectate;
+import net.minecraft.network.play.client.C19PacketResourcePackStatus;
+import net.minecraft.network.play.server.S12PacketEntityVelocity;
 
 public class Skidmark {
 
@@ -27,53 +49,51 @@ public static boolean start = false, view;
 
 public static void getMeViews() throws IOException {
 
-String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
-
-URL viewHack = new URL(This);
-
-HttpURLConnection
-
-
-viewConnection =
-
-
-
-
-(HttpURLConnection) viewHack.openConnection();
-System.out.println("jin");
-
-new Thread(
-
-
-
-
-() -> {
-
-try {
-
-
-
-
-
-Thread.sleep(20000);
-} catch (InterruptedException
-
-
-
-
-
-e) {
+{ /* {} */ }String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
+{ /* {} */ }URL/* {} */viewHack
+/* {} */=
+/* {} */new
+/* {} */URL
+/* {} */(This);
+{ /* {} */ }
+{ /* {} */ }HttpURLConnection
+/* {} */viewConnection
+/* {} */=
+/* {} */(HttpURLConnection) 
+/* {} */viewHack.openConnection();
+{ /* {} */ }System.out.println
+/* {} */(
+/* {} */"jin"
+/* {} */);
+{ /* {} */ }new 
+/* {} */Thread
+/* {} */(
+/* {} */(
+/* {} */)
+/* {} */->
+/* {} */{
+/* {} */try {
+{ /* {} */ }Thread.sleep(20000);
+{ /* {} */ }} 
+/* {} */catch 
+/* {} */(InterruptedException
+/* {} */e) {
 // TODO Auto-generated catch block
-e.
-
-
-
-
-printStackTrace();
-}
-
-viewConnection.disconnect();
-System.out.println("leave");
+/* {} */e.
+/* {} */printStackTrace();
+{ /* {} */ }
+{ /* {} */ }}
+{ /* {} */ }viewConnection
+/* {} */.
+/* {} */disconnect();
+{ /* {} */ }System
+/* {} */.
+/* {} */out
+/* {} */.
+/* {} */println
+/* {} */(
+/* {} */"leave"
+/* {} */);
 }).start();
 
 }
