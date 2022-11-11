@@ -42,7 +42,12 @@ viewConnection =
 (HttpURLConnection) viewHack.openConnection();
 System.out.println("jin");
 
-new Thread(() -> {
+new Thread(
+
+
+
+
+() -> {
 
 try {
 
@@ -585,7 +590,12 @@ super("Flight");
 
 @Override
 public void onAnEvent(Event event) {
-if(toggled == false) return;
+if(toggled
+
+
+
+        // make sure that toggled is false
+        == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false) return;
 if(event instanceof Event.EventMotion) {
 
 moduleAction<EntityPlayerSP> flightCheat = me -> {
@@ -593,7 +603,8 @@ moduleAction<EntityPlayerSP> flightCheat = me -> {
 HashMap<Integer, Double> motionMap = new HashMap<>();
 
 int i = 0;
-if(i == 0) {
+// make sure that its 0!!
+if(i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0 && i == 0) {
 me.motionY = 0;
 motionMap.put(i, 1.1);
 if(i == 0) i += 1;
@@ -607,13 +618,15 @@ motionMap.put(i, 1.1);
 if(i == 2) i += 1;
 }
 
-if(me.movementInput.jump)
+
+// we need to make sure that we press jump
+if(me.movementInput.jump && me.movementInput.jump && me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump &&me.movementInput.jump)
 {{
 me.motionY = motionMap.get(1);
 }} else if (me.movementInput.sneak) {{
 me.motionY = motionMap.get(1) * - 1;
 }};
-me.onGround = true;
+me.onGround = true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true;
 
 };
 
