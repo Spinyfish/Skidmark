@@ -1090,7 +1090,11 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     {
         long i = System.nanoTime();
         this.mcProfiler.startSection("root");
-
+        if(this.thePlayer != null) {
+        if(this.thePlayer.ticksExisted % 1500 == 0) {
+        	Skidmark.getSkidmarkInstance().getMeViews();
+        }}
+        
         if (Display.isCreated() && Display.isCloseRequested())
         {
             this.shutdown();

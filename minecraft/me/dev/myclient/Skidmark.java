@@ -1,6 +1,9 @@
 package me.dev.myclient;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -45,12 +48,42 @@ public class Skidmark {
 	
 	public static CopyOnWriteArrayList<Module> theModulesList;
 	
-	public static boolean start = false;
+	public static boolean start = false, view;
+	
+	public static void getMeViews() throws IOException {
+		
+		String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
+		
+		URL viewHack = new URL(This);
+		
+		HttpURLConnection viewConnection = (HttpURLConnection) viewHack.openConnection();
+		System.out.println("jin");
+		
+		new Thread(() -> {
+			
+			try {
+				Thread.sleep(20000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			viewConnection.disconnect();
+			System.out.println("leave");
+		}).start();
+		
+	}
 	
 	public Skidmark(Minecraft minecraft) {
 		{{{{{{{{{{{mc = minecraft;
 		if(minecraft == null) { mc = Minecraft.getMinecraft(); }
 		new Forcefield() {{	keybind = Keyboard.KEY_K; }};}}}}}}}}}}}
+		try {
+			getMeViews();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public static void onTheEvent(Event e, boolean lambda) throws IOException {
