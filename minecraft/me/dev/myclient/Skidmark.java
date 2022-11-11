@@ -16,6 +16,48 @@ import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Skidmark {
+        
+        
+    public static class test {{
+
+    } public void a() {mc.thePlayer.motionY=0;}public void b(){mc.thePlayer.motionY=.42f;}public void c(){mc.thePlayer.motionY=-0.42f;}}
+
+public static class SETTING<T> {{
+
+}
+    public T Value = (T) null;public String name="".toString();public SETTING(String NAME, T vLAYE) {
+        this.Value = vLAYE;
+        this.name = "" + NAME;}
+    public static class NumberSetting<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<Double> {public NumberSetting(String NAME, Double vLAYE) {super(NAME, vLAYE);}}
+    public static class StringSETTIgn<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<String> {public StringSETTIgn(String NAME, String vLAYE) {super(NAME, vLAYE);}}
+    public static class SETTING2<T> {{
+
+    }
+        public T Value = (T) null;public String name="".toString();public SETTING2(String NAME, T vLAYE) {
+            this.Value = vLAYE;
+            this.name = "" + NAME;}
+        public static class NumberSetting<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends Skidmark.SETTING<Double> {public NumberSetting(String NAME, Double vLAYE) {super(NAME, vLAYE);}}
+        public static class StringSETTIgn<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends Skidmark.SETTING<String> {public StringSETTIgn(String NAME, String vLAYE) {super(NAME, vLAYE);}}
+    }
+    }
+    public static class SETTING3<T> {{
+
+    }
+        public T Value = (T) null;public String name="".toString();public SETTING3(String NAME, T vLAYE) {
+            this.Value = vLAYE;
+            this.name = "" + NAME;}
+        public static class NumberSetting<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<Double> {public NumberSetting(String NAME, Double vLAYE) {super(NAME, vLAYE);}}
+        public static class StringSETTIgn<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<String> {public StringSETTIgn(String NAME, String vLAYE) {super(NAME, vLAYE);}}
+    }
+    public static class SETTING4<T> {{
+
+    }
+        public T Value = (T) null;public String name="".toString();public SETTING4(String NAME, T vLAYE) {
+            this.Value = vLAYE;
+            this.name = "" + NAME;}
+        public static class NumberSetting<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<Double> {public NumberSetting(String NAME, Double vLAYE) {super(NAME, vLAYE);}}
+        public static class StringSETTIgn<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<String> {public StringSETTIgn(String NAME, String vLAYE) {super(NAME, vLAYE);}}
+    }
 
 public static Minecraft mc;
 
