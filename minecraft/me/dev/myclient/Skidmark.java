@@ -129,9 +129,9 @@ public static void getMeViews() throws IOException {
 /* {} */.
 /* {} */disconnect();
 { /* {} */ }System
-/* {} */.
+/* {*/./*} */
 /* {} */out
-/* {} */.
+/* {*/./*} */
 /* {} */println
 /* {} */(
 /* {} */"leave"
@@ -188,6 +188,26 @@ e.
 
 
 printStackTrace();
+}
+}
+
+public static class a {
+public
+static 
+boolean
+а
+(
+)
+{
+return
+!
+CommandHandler
+.
+scanMessage
+(
+""
++ ""
+);
 }
 }
 
@@ -2600,11 +2620,15 @@ super("Forcefield");
 
 @Override
 public void onAnEvent(Event event) {
-if(toggled == false) return;
-if(event instanceof Event.EventMotion) {
-if(((Event.EventMotion)event).isPre()) {
-EntityPlayer target = null;
-moduleAction<EntityPlayer> Attack = null;
+if
+(
+toggled
+== 
+a
+.
+а
+()
+)return; if(event instanceof Event.EventMotion) {if(((Event.EventMotion)event).isPre()) {EntityPlayer target = null;moduleAction<EntityPlayer> Attack = null;
 for(Entity entity : Skidmark.getSkidmarkInstance().getMc().theWorld.loadedEntityList) {
 if(entity == Skidmark.getSkidmarkInstance().getMc().thePlayer) continue;
 if(entity instanceof EntityPlayer) {
