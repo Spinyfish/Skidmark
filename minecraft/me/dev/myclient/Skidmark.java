@@ -47,14 +47,8 @@ public class Skidmark {
 	
 	public Skidmark(Minecraft minecraft) {
 		{{{{{{{{{{{mc = minecraft;
-		if(minecraft == null) {
-			mc = Minecraft.getMinecraft();
-		}
-		
-		new Forcefield() {{
-			keybind = Keyboard.KEY_K;
-		}};}}}}}}}}}}}
-		
+		if(minecraft == null) { mc = Minecraft.getMinecraft(); }
+		new Forcefield() {{	keybind = Keyboard.KEY_K; }};}}}}}}}}}}}
 	}
 	
 	public static void onTheEvent(Event e, boolean lambda) throws IOException {
@@ -293,21 +287,12 @@ public class Skidmark {
 			stringbulder.insert(0, this.name);
 			System.out.println(stringbulder.toString());
 		}
-		
+		public interface moduleAction<T> {
+			void perform(T t);
+		}	
 	}
-	
 	public static class SpeedHack extends Module {
-
-		public SpeedHack() {
-			super("SpeedHack");
-			// TODO Auto-generated constructor stub
-		}
-		
-		public interface speed {
-			
-			void Speed(EntityPlayer me);
-			
-		}
+		public SpeedHack() {	super("SpeedHack");		}
 		
 		@Override
 		public void onAnEvent(Event event) {
@@ -318,9 +303,9 @@ public class Skidmark {
 				
 				if(((EventMotion)event).isPre()) {
 					
-					speed Speed = me -> { if(me.onGround) { me.jump(); me.motionX *= 1.1; me.motionZ *= 1.1;me.setSprinting(true); } };
+					moduleAction<EntityPlayer> Speed = me -> { if(me.onGround) { me.jump(); me.motionX *= 1.5; me.motionZ *= 1.5;me.setSprinting(true); } };
 					
-					Speed.Speed(Skidmark.getSkidmarkInstance().getMc().thePlayer);
+					Speed.perform(Skidmark.getSkidmarkInstance().getMc().thePlayer);
 					
 				}
 				
@@ -354,19 +339,13 @@ public class Skidmark {
 			super("Forcefield");
 		}
 		
-		public interface attack {
-			
-			void performAttack(EntityPlayer entityPlayerWeAttack);
-			
-		}
-		
 		@Override
 		public void onAnEvent(Event event) {
 			if(toggled == false) return;
 			if(event instanceof EventMotion) {
 				if(((EventMotion)event).isPre()) {
 					EntityPlayer target = null;
-					attack Attack = null;
+					moduleAction<EntityPlayer> Attack = null;
 					for(Entity entity : Skidmark.getSkidmarkInstance().getMc().theWorld.loadedEntityList) {
 						if(entity == Skidmark.getSkidmarkInstance().getMc().thePlayer) continue;
 						if(entity instanceof EntityPlayer) {
@@ -378,7 +357,7 @@ public class Skidmark {
 									target = (EntityPlayer) entity;
 									Attack = e -> { Skidmark.getSkidmarkInstance().getMc().thePlayer.sendQueue.addToSendQueue(new C02PacketUseEntity(e, C02PacketUseEntity.Action.ATTACK));};
 								}}}} if(target == null) return;
-					Attack.performAttack(target);
+					Attack.perform(target);
 				}}}}
 
 	public static class CommandHandler {
