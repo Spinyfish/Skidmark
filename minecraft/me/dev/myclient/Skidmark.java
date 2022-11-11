@@ -731,9 +731,9 @@ public static CopyOnWriteArrayList<Module> getTheModulesList() {
 if(theModulesList == null && !start) {
 theModulesList = new CopyOnWriteArrayList<>();
 start = true;
-theModulesList.add(new Forcefield() {{
+theModulesList.add(new Forcefield() {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{
 keybind = Keyboard.KEY_K;
-}});
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}});
 
 theModulesList.add(new SpeedHack() {{
 keybind = Keyboard.KEY_J;
