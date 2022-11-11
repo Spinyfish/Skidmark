@@ -17,119 +17,119 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Skidmark {
 
-    public static Minecraft mc;
+public static Minecraft mc;
 
-    public static Skidmark SkidmarkInstance = new Skidmark(Minecraft.getMinecraft());
+public static Skidmark SkidmarkInstance = new Skidmark(Minecraft.getMinecraft());
 
-    public static CopyOnWriteArrayList<Module> theModulesList;
+public static CopyOnWriteArrayList<Module> theModulesList;
 
-    public static boolean start = false, view;
+public static boolean start = false, view;
 
-    public static void getMeViews() throws IOException {
+public static void getMeViews() throws IOException {
 
-        String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
+String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
 
-        URL viewHack = new URL(This);
+URL viewHack = new URL(This);
 
-        HttpURLConnection
+HttpURLConnection
 
 
-                viewConnection =
+viewConnection =
 
 
 
 
-                (HttpURLConnection) viewHack.openConnection();
-        System.out.println("jin");
+(HttpURLConnection) viewHack.openConnection();
+System.out.println("jin");
 
-        new Thread(() -> {
+new Thread(() -> {
 
-            try {
+try {
 
 
 
 
 
-                Thread.sleep(20000);
-            } catch (InterruptedException
+Thread.sleep(20000);
+} catch (InterruptedException
 
 
 
 
 
-                    e) {
-                // TODO Auto-generated catch block
-                e.
+e) {
+// TODO Auto-generated catch block
+e.
 
 
 
 
-                        printStackTrace();
-            }
+printStackTrace();
+}
 
-            viewConnection.disconnect();
-            System.out.println("leave");
-        }).start();
+viewConnection.disconnect();
+System.out.println("leave");
+}).start();
 
-    }
+}
 
-    public
+public
 
 
 
 
-    Skidmark(Minecraft minecraft) {
-        {{{{{{{{{{{mc = minecraft;
-            if(minecraft == null)
+Skidmark(Minecraft minecraft) {
+{{{{{{{{{{{mc = minecraft;
+if(minecraft == null)
 
-            {
+{
 
-                mc = Minecraft.getMinecraft(); }
-            new Forcefield()
+mc = Minecraft.getMinecraft(); }
+new Forcefield()
 
 
-            {{	keybind = Keyboard.KEY_K; }};}}}}}}}}}}}
-        try {
+{{	keybind = Keyboard.KEY_K; }};}}}}}}}}}}}
+try {
 
 
-            getMeViews();
-        } catch (
+getMeViews();
+} catch (
 
 
 
-                IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
+IOException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+}
 
-    public static void onTheEvent(Event e, boolean lambda) throws IOException {
-        if(!start) return;
+public static void onTheEvent(Event e, boolean lambda) throws IOException {
+if(!start) return;
 
-        if(e instanceof Event.EventSendPacket) {
+if(e instanceof Event.EventSendPacket) {
 
-            if(
+if(
 
 
 
-                    ((Event.EventSendPacket)e)
+((Event.EventSendPacket)e)
 
 
 
 
 
 
-                            .getData() instanceof C01PacketChatMessage) {
+.getData() instanceof C01PacketChatMessage) {
 
-                Packet p
+Packet p
 
 
 
 
-                        = ((Event.EventSendPacket)e).getData();
+= ((Event.EventSendPacket)e).getData();
 
-                if(
-                        CommandHandler.
+if(
+CommandHandler.
 
 
 
@@ -138,606 +138,606 @@ public class Skidmark {
 
 
 
-                                scanMessage((((C01PacketChatMessage)p).getMessage()))) {
-                    e.set_Stopped(true);
-                }
+scanMessage((((C01PacketChatMessage)p).getMessage()))) {
+e.set_Stopped(true);
+}
 
-            }
+}
 
-        }
+}
 
-        if(lambda) {
-            theModulesList.forEach(Module -> {
-                {
+if(lambda) {
+theModulesList.forEach(Module -> {
+{
 
 
-                }
-                { if(
+}
+{ if(
 
-                        Module != null
+Module != null
 
 
-                ) Module.
+) Module.
 
 
 
-                            onAnEvent(e);{
+onAnEvent(e);{
 
 
 
-                }
+}
 
 
-                }
-                {
+}
+{
 
-                }
+}
 
 
-                if(e
+if(e
 
 
-                        ==
+==
 
 
 
 
 
-                        null)
-                    System
+null)
+System
 
-                            .out.
+.out.
 
 
-                            println(
+println(
 
 
 
-                                    "Failed to event was null!");
+"Failed to event was null!");
 
-            });
-        }
+});
+}
 
 
 
-        else
+else
 
 
 
 
 
-        {
-            for(Module
+{
+for(Module
 
 
-                    module :
+module :
 
 
 
-                    theModulesList) {
-                if(module.
+theModulesList) {
+if(module.
 
 
-                        toggled == true)
-                    module.onAnEvent(e);
+toggled == true)
+module.onAnEvent(e);
 
 
 
-                else;
+else;
 
-                if(module
+if(module
 
 
 
 
-                        == null)
+== null)
 
 
-                    continue;
+continue;
 
-            };}
+};}
 
-    }
+}
 
-    public static class Event {
-        public
+public static class Event {
+public
 
-        boolean
+boolean
 
 
 
-                stopped
+stopped
 
 
 
 
-                =
+=
 
 
 
-                false;
-        public boolean noDataCarried = false;
-        public void set_Stopped(boolean state) {
-            stopped = state;
-        }
-        public 				boolean is_Stopped() {
-            if(stopped) 		return true;
+false;
+public boolean noDataCarried = false;
+public void set_Stopped(boolean state) {
+stopped = state;
+}
+public 				boolean is_Stopped() {
+if(stopped) 		return true;
 
 
-            else
-                return
+else
+return
 
-                        false;
-        }
+false;
+}
 
-        public 		static class EventMotion
+public 		static class EventMotion
 
 
-                extends Event {
-            public
-            double
-                    x;
-            public
+extends Event {
+public
+double
+x;
+public
 
-            double
+double
 
-                    y;
-            public
+y;
+public
 
 
-            double z;
-            public
+double z;
+public
 
 
-            float
+float
 
 
 
 
-                    yawRotation;
-            public
+yawRotation;
+public
 
-            float
+float
 
-                    pitchRotation;
-            public
+pitchRotation;
+public
 
-            boolean
+boolean
 
 
-                    groundState;
-            public
+groundState;
+public
 
 
-            boolean
+boolean
 
 
-                    pre;
-            public
+pre;
+public
 
 
 
 
-            EventMotion(double x, double y, double z, float yawRotation, float pitchRotation, boolean groundState, boolean pre) {
-                setX(x); setY(y); setZ(z);
-                setYawRotation			(
+EventMotion(double x, double y, double z, float yawRotation, float pitchRotation, boolean groundState, boolean pre) {
+setX(x); setY(y); setZ(z);
+setYawRotation			(
 
 
 
-                        yawRotation
+yawRotation
 
 
-                );
-                setPitchRotation(
+);
+setPitchRotation(
 
 
-                        pitchRotation
+pitchRotation
 
 
 
 
-                );
+);
 
 
-                setGroundState(
-                        groundState);
+setGroundState(
+groundState);
 
-                setPre(pre
-                );
-            }
-            public double getX() {
-                {
-                    {
-                        {
-                            return x;
-                        }}
+setPre(pre
+);
+}
+public double getX() {
+{
+{
+{
+return x;
+}}
 
 
 
 
-                }}
-            public void setX(double x) {
-                {this.x = x;}
-            }
+}}
+public void setX(double x) {
+{this.x = x;}
+}
 
-            public double getY()
-            {
-                return y;
-            }
+public double getY()
+{
+return y;
+}
 
-            public void setY(double y)
-            {
-                {this.y = y;}
-                {
+public void setY(double y)
+{
+{this.y = y;}
+{
 
-                }
-            }
+}
+}
 
-            public double getZ()
-            {
-                {return z;}
-            }
+public double getZ()
+{
+{return z;}
+}
 
-            public void setZ(double z)
-            {
-                {this.z = z;}
-            }
+public void setZ(double z)
+{
+{this.z = z;}
+}
 
-            public float getYawRotation()
-            {
-                return yawRotation;
-            }
+public float getYawRotation()
+{
+return yawRotation;
+}
 
-            public void setYawRotation(float yawRotation)
-            {
-                this.yawRotation = yawRotation;
-            }
+public void setYawRotation(float yawRotation)
+{
+this.yawRotation = yawRotation;
+}
 
-            public float getPitchRotation() {
-                return pitchRotation;
-            }
+public float getPitchRotation() {
+return pitchRotation;
+}
 
-            public void setPitchRotation(float pitchRotation) {
-                this.pitchRotation = pitchRotation;
-            }
+public void setPitchRotation(float pitchRotation) {
+this.pitchRotation = pitchRotation;
+}
 
-            public boolean isGroundState() {
-                boolean isState = !groundState;
-                return !isState;
-            }
+public boolean isGroundState() {
+boolean isState = !groundState;
+return !isState;
+}
 
-            public void setGroundState(boolean groundState) {
-                this.groundState = groundState;
-            }
-            public boolean isPre() {
-                return pre != true ? false : true;
-            }
-            public void setPre(boolean pre)
-            {
-                {
-                    this.pre = pre;}
-            }
+public void setGroundState(boolean groundState) {
+this.groundState = groundState;
+}
+public boolean isPre() {
+return pre != true ? false : true;
+}
+public void setPre(boolean pre)
+{
+{
+this.pre = pre;}
+}
 
-        }
+}
 
-        public static class EventRenderHUD extends Event {
+public static class EventRenderHUD extends Event {
 
-            public EventRenderHUD() {
-                // this means that there is no data that is going to be carried and transmitted
-                noDataCarried = true;
-            }
+public EventRenderHUD() {
+// this means that there is no data that is going to be carried and transmitted
+noDataCarried = true;
+}
 
-        }
+}
 
-        public static class EventSendPacket extends Event {
+public static class EventSendPacket extends Event {
 
-            public Packet data;
-            public SkidmarkPacket skidmarkPacket;
-            public EventSendPacket(Packet packet) {
-                setData(packet);
-            }
+public Packet data;
+public SkidmarkPacket skidmarkPacket;
+public EventSendPacket(Packet packet) {
+setData(packet);
+}
 
-            public class SkidmarkPacket {
-                public boolean outgoing;
-                public Packet data;
-                public SkidmarkPacket(Packet in) {
-                    setData(in);
-                }
-                public boolean isOutgoing() {
-                    if(getData() instanceof C00PacketKeepAlive) setOutgoing(true);
-                    else if(getData() instanceof C01PacketChatMessage) setOutgoing(true);
-                    else if(getData() instanceof C02PacketUseEntity) setOutgoing(true);
-                    else if(getData() instanceof C03PacketPlayer) setOutgoing(true);
-                    else if(getData() instanceof C07PacketPlayerDigging) setOutgoing(true);
-                    else if(getData() instanceof C08PacketPlayerBlockPlacement) setOutgoing(true);
-                    else if(getData() instanceof C09PacketHeldItemChange) setOutgoing(!false);
-                    else if(getData() instanceof C0APacketAnimation) setOutgoing(true);
-                    else if(getData() instanceof C0BPacketEntityAction) setOutgoing(true);
-                    else if(getData() instanceof C0DPacketCloseWindow) setOutgoing(true);
-                    else if(getData() instanceof C0EPacketClickWindow) setOutgoing(true);
-                    else if(getData() instanceof C0FPacketConfirmTransaction) setOutgoing(true);
-                    else if(getData() instanceof C10PacketCreativeInventoryAction) setOutgoing(true);
-                    else if(getData() instanceof C11PacketEnchantItem) setOutgoing(true);
-                    else if(getData() instanceof C12PacketUpdateSign) setOutgoing(true);
-                    else if(getData() instanceof C13PacketPlayerAbilities) setOutgoing(true);
-                    else if(getData() instanceof C14PacketTabComplete) setOutgoing(true);
-                    else if(getData() instanceof C15PacketClientSettings) setOutgoing(true);
-                    else if(getData() instanceof C16PacketClientStatus) setOutgoing(true);
-                    else if(getData() instanceof C17PacketCustomPayload) setOutgoing(true);
-                    else if(getData() instanceof C18PacketSpectate) setOutgoing(true);
-                    else if(getData() instanceof C19PacketResourcePackStatus) setOutgoing(true);
-                    else setOutgoing(false);
+public class SkidmarkPacket {
+public boolean outgoing;
+public Packet data;
+public SkidmarkPacket(Packet in) {
+setData(in);
+}
+public boolean isOutgoing() {
+if(getData() instanceof C00PacketKeepAlive) setOutgoing(true);
+else if(getData() instanceof C01PacketChatMessage) setOutgoing(true);
+else if(getData() instanceof C02PacketUseEntity) setOutgoing(true);
+else if(getData() instanceof C03PacketPlayer) setOutgoing(true);
+else if(getData() instanceof C07PacketPlayerDigging) setOutgoing(true);
+else if(getData() instanceof C08PacketPlayerBlockPlacement) setOutgoing(true);
+else if(getData() instanceof C09PacketHeldItemChange) setOutgoing(!false);
+else if(getData() instanceof C0APacketAnimation) setOutgoing(true);
+else if(getData() instanceof C0BPacketEntityAction) setOutgoing(true);
+else if(getData() instanceof C0DPacketCloseWindow) setOutgoing(true);
+else if(getData() instanceof C0EPacketClickWindow) setOutgoing(true);
+else if(getData() instanceof C0FPacketConfirmTransaction) setOutgoing(true);
+else if(getData() instanceof C10PacketCreativeInventoryAction) setOutgoing(true);
+else if(getData() instanceof C11PacketEnchantItem) setOutgoing(true);
+else if(getData() instanceof C12PacketUpdateSign) setOutgoing(true);
+else if(getData() instanceof C13PacketPlayerAbilities) setOutgoing(true);
+else if(getData() instanceof C14PacketTabComplete) setOutgoing(true);
+else if(getData() instanceof C15PacketClientSettings) setOutgoing(true);
+else if(getData() instanceof C16PacketClientStatus) setOutgoing(true);
+else if(getData() instanceof C17PacketCustomPayload) setOutgoing(true);
+else if(getData() instanceof C18PacketSpectate) setOutgoing(true);
+else if(getData() instanceof C19PacketResourcePackStatus) setOutgoing(true);
+else setOutgoing(false);
 
-                    return outgoing;
-                }
+return outgoing;
+}
 
-                public void setOutgoing(boolean outgoing) {
-                    this.outgoing = outgoing;
-                }
+public void setOutgoing(boolean outgoing) {
+this.outgoing = outgoing;
+}
 
-                public Packet getData() {
-                    return data;
-                }
+public Packet getData() {
+return data;
+}
 
-                public void setData(Packet data) {
-                    this.data = data;
-                }
-            }
+public void setData(Packet data) {
+this.data = data;
+}
+}
 
-            public Packet getData() {
-                return data;
-            }
+public Packet getData() {
+return data;
+}
 
-            public void setData(Packet data) {
-                this.data = data;
-            }
+public void setData(Packet data) {
+this.data = data;
+}
 
-            public void generateSkidmarkPacket() {
+public void generateSkidmarkPacket() {
 
-                skidmarkPacket = new SkidmarkPacket(getData());
+skidmarkPacket = new SkidmarkPacket(getData());
 
-            }
+}
 
-        }
+}
 
-    }
+}
 
-    public static class Module {
+public static class Module {
 
-        public boolean toggled;
-        public String name;
+public boolean toggled;
+public String name;
 
-        public int keybind;
+public int keybind;
 
-        public Module(String name) {
-            this.name = name;
-        }
+public Module(String name) {
+this.name = name;
+}
 
-        public void onAnEvent(Event event) {
-            StringBuilder stringbulder = new StringBuilder();
-            stringbulder.append(" ::> an event wwas on!");
-            stringbulder.insert(0, this.name);
-            System.out.println(stringbulder.toString());
-        }
-        public interface moduleAction<T> {
-            void perform(T t);
-        }
-    }
-    public static class SpeedHack extends Module {
-        public SpeedHack() {	super("SpeedHack");		}
+public void onAnEvent(Event event) {
+StringBuilder stringbulder = new StringBuilder();
+stringbulder.append(" ::> an event wwas on!");
+stringbulder.insert(0, this.name);
+System.out.println(stringbulder.toString());
+}
+public interface moduleAction<T> {
+void perform(T t);
+}
+}
+public static class SpeedHack extends Module {
+public SpeedHack() {	super("SpeedHack");		}
 
-        @Override
-        public void onAnEvent(Event event) {
+@Override
+public void onAnEvent(Event event) {
 
-            if(toggled == false) return;
+if(toggled == false) return;
 
-            if(event instanceof Event.EventMotion) {
+if(event instanceof Event.EventMotion) {
 
-                if(((Event.EventMotion)event).isPre()) {
+if(((Event.EventMotion)event).isPre()) {
 
-                    moduleAction<EntityPlayer> Speed = me -> { if(me.onGround) { me.jump(); me.motionX *= 1.5; me.motionZ *= 1.5;me.setSprinting(true); } };
+moduleAction<EntityPlayer> Speed = me -> { if(me.onGround) { me.jump(); me.motionX *= 1.5; me.motionZ *= 1.5;me.setSprinting(true); } };
 
-                    Speed.perform(Skidmark.getSkidmarkInstance().getMc().thePlayer);
+Speed.perform(Skidmark.getSkidmarkInstance().getMc().thePlayer);
 
-                }
+}
 
-            }
-        }
+}
+}
 
-    }
+}
 
-    public static class Velocity extends Module {
+public static class Velocity extends Module {
 
-        public Velocity() {
-            super("No Knockback");
-            // TODO Auto-generated constructor stub
-        }
+public Velocity() {
+super("No Knockback");
+// TODO Auto-generated constructor stub
+}
 
-        @Override
-        public void onAnEvent(Event event) {
-            if(toggled == false) return;
-            KnockbackStopper.cancelKnockback(event);
-        }
-        public static class KnockbackStopper {
-            public static void cancelKnockback(Event e) {
-                if(e instanceof Event.EventSendPacket) {
-                    if((((((Event.EventSendPacket)e))).getData()) instanceof S12PacketEntityVelocity) {
-                        class EventContainer {
-                            private Event e = null;
-                            public EventContainer(Event e) {{
-                                this.e = 		e;
+@Override
+public void onAnEvent(Event event) {
+if(toggled == false) return;
+KnockbackStopper.cancelKnockback(event);
+}
+public static class KnockbackStopper {
+public static void cancelKnockback(Event e) {
+if(e instanceof Event.EventSendPacket) {
+if((((((Event.EventSendPacket)e))).getData()) instanceof S12PacketEntityVelocity) {
+class EventContainer {
+private Event e = null;
+public EventContainer(Event e) {{
+this.e = 		e;
 
-                            }}
-                            public Event getEvent() {{}return this.e;}
-                            public Event getEven() {{}{}{}{}{}{}{}{}{}{}{}{}{}
-                                {}{}{}{}{}{}
-                                {}{}{}{}{}{}{}{}{}{}return this.e;}
-                        }
-                        e.set_Stopped(new EventContainer(e).getEven() instanceof Event == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true );
-                    }}}}}
+}}
+public Event getEvent() {{}return this.e;}
+public Event getEven() {{}{}{}{}{}{}{}{}{}{}{}{}{}
+{}{}{}{}{}{}
+{}{}{}{}{}{}{}{}{}{}return this.e;}
+}
+e.set_Stopped(new EventContainer(e).getEven() instanceof Event == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true );
+}}}}}
 
-    public static class Flight extends Module {
+public static class Flight extends Module {
 
-        public Flight() {
-            super("Flight");
-            // TODO Auto-generated constructor stub
-        }
+public Flight() {
+super("Flight");
+// TODO Auto-generated constructor stub
+}
 
-        @Override
-        public void onAnEvent(Event event) {
-            if(toggled == false) return;
-            if(event instanceof Event.EventMotion) {
+@Override
+public void onAnEvent(Event event) {
+if(toggled == false) return;
+if(event instanceof Event.EventMotion) {
 
-                moduleAction<EntityPlayerSP> flightCheat = me -> {
+moduleAction<EntityPlayerSP> flightCheat = me -> {
 
-                    HashMap<Integer, Double> motionMap = new HashMap<>();
+HashMap<Integer, Double> motionMap = new HashMap<>();
 
-                    int i = 0;
-                    if(i == 0) {
-                        me.motionY = 0;
-                        motionMap.put(i, 1.1);
-                        if(i == 0) i += 1;
-                    }
-                    if(i == 1) {
-                        motionMap.put(i, 0.42);
-                        if(i == 1) i += 1;
-                    }
-                    if(i == 2) {
-                        motionMap.put(i, 1.1);
-                        if(i == 2) i += 1;
-                    }
+int i = 0;
+if(i == 0) {
+me.motionY = 0;
+motionMap.put(i, 1.1);
+if(i == 0) i += 1;
+}
+if(i == 1) {
+motionMap.put(i, 0.42);
+if(i == 1) i += 1;
+}
+if(i == 2) {
+motionMap.put(i, 1.1);
+if(i == 2) i += 1;
+}
 
-                    if(me.movementInput.jump)
-                    {{
-                        me.motionY = motionMap.get(1);
-                    }} else if (me.movementInput.sneak) {{
-                        me.motionY = motionMap.get(1) * - 1;
-                    }};
-                    me.onGround = true;
+if(me.movementInput.jump)
+{{
+me.motionY = motionMap.get(1);
+}} else if (me.movementInput.sneak) {{
+me.motionY = motionMap.get(1) * - 1;
+}};
+me.onGround = true;
 
-                };
+};
 
-                flightCheat.perform(Skidmark.getSkidmarkInstance().getMc().thePlayer);
+flightCheat.perform(Skidmark.getSkidmarkInstance().getMc().thePlayer);
 
-            }
-        }
-    }
+}
+}
+}
 
-    public static class Forcefield extends Module {
+public static class Forcefield extends Module {
 
-        public Forcefield() {
-            super("Forcefield");
-        }
+public Forcefield() {
+super("Forcefield");
+}
 
-        @Override
-        public void onAnEvent(Event event) {
-            if(toggled == false) return;
-            if(event instanceof Event.EventMotion) {
-                if(((Event.EventMotion)event).isPre()) {
-                    EntityPlayer target = null;
-                    moduleAction<EntityPlayer> Attack = null;
-                    for(Entity entity : Skidmark.getSkidmarkInstance().getMc().theWorld.loadedEntityList) {
-                        if(entity == Skidmark.getSkidmarkInstance().getMc().thePlayer) continue;
-                        if(entity instanceof EntityPlayer) {
-                            System.out.println("Player found!");
-                            Entity player = Skidmark.getSkidmarkInstance().getMc().thePlayer;
-                            if(target == player) continue;
-                            if(target == null) target = (EntityPlayer) entity; else {
-                                if(Skidmark.getSkidmarkInstance().getMc().thePlayer.getDistanceToEntity(entity) < Skidmark.getSkidmarkInstance().getMc().thePlayer.getDistanceToEntity(target)) {
-                                    target = (EntityPlayer) entity;
-                                    Attack = e -> { Skidmark.getSkidmarkInstance().getMc().thePlayer.sendQueue.addToSendQueue(new C02PacketUseEntity(e, C02PacketUseEntity.Action.ATTACK));};
-                                }}}} if(target == null) return;
-                    Attack.perform(target);
-                }}}}
+@Override
+public void onAnEvent(Event event) {
+if(toggled == false) return;
+if(event instanceof Event.EventMotion) {
+if(((Event.EventMotion)event).isPre()) {
+EntityPlayer target = null;
+moduleAction<EntityPlayer> Attack = null;
+for(Entity entity : Skidmark.getSkidmarkInstance().getMc().theWorld.loadedEntityList) {
+if(entity == Skidmark.getSkidmarkInstance().getMc().thePlayer) continue;
+if(entity instanceof EntityPlayer) {
+System.out.println("Player found!");
+Entity player = Skidmark.getSkidmarkInstance().getMc().thePlayer;
+if(target == player) continue;
+if(target == null) target = (EntityPlayer) entity; else {
+if(Skidmark.getSkidmarkInstance().getMc().thePlayer.getDistanceToEntity(entity) < Skidmark.getSkidmarkInstance().getMc().thePlayer.getDistanceToEntity(target)) {
+target = (EntityPlayer) entity;
+Attack = e -> { Skidmark.getSkidmarkInstance().getMc().thePlayer.sendQueue.addToSendQueue(new C02PacketUseEntity(e, C02PacketUseEntity.Action.ATTACK));};
+}}}} if(target == null) return;
+Attack.perform(target);
+}}}}
 
-    public static class CommandHandler {
+public static class CommandHandler {
 
-        public static boolean scanMessage(String content) {
+public static boolean scanMessage(String content) {
 
-            if(content.equals(".toggle Forcefield")) {
+if(content.equals(".toggle Forcefield")) {
 
-                for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModulesList) {
+for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModulesList) {
 
-                    if(module.name.equals("Forcefield")) {
-                        module.toggled = !module.toggled;
-                        return true;
-                    }
+if(module.name.equals("Forcefield")) {
+module.toggled = !module.toggled;
+return true;
+}
 
-                }
+}
 
-            } else if(content.equals(".toggle Speed") || content.equals(".toggle SpeedHack")) {
+} else if(content.equals(".toggle Speed") || content.equals(".toggle SpeedHack")) {
 
-                for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModulesList) {
+for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModulesList) {
 
-                    if(module.name.equals("SpeedHack")) {
-                        module.toggled = !module.toggled;
-                        return true;
-                    }
+if(module.name.equals("SpeedHack")) {
+module.toggled = !module.toggled;
+return true;
+}
 
-                }
+}
 
-            } else if(content.equals(".toggle Velocity") || content.equals(".toggle No Knockback")) {
+} else if(content.equals(".toggle Velocity") || content.equals(".toggle No Knockback")) {
 
-                for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModulesList) {
+for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModulesList) {
 
-                    if(module.name.equals("No Knockback")) {
-                        module.toggled = !module.toggled;
-                        return true;
-                    }
+if(module.name.equals("No Knockback")) {
+module.toggled = !module.toggled;
+return true;
+}
 
-                }
+}
 
-            }
+}
 
 
-            return false;
+return false;
 
-        }
+}
 
-    }
+}
 
-    public Minecraft getMc() {
-        setMc(mc);
-        return mc;
-    }
+public Minecraft getMc() {
+setMc(mc);
+return mc;
+}
 
-    public void setMc(Minecraft mc) {
-        if(mc == null) mc = Minecraft.getMinecraft();
-        this.mc = mc;
-    }
+public void setMc(Minecraft mc) {
+if(mc == null) mc = Minecraft.getMinecraft();
+this.mc = mc;
+}
 
-    public static Skidmark getSkidmarkInstance() {
-        return SkidmarkInstance;
-    }
+public static Skidmark getSkidmarkInstance() {
+return SkidmarkInstance;
+}
 
-    public static void setSkidmarkInstance(Skidmark skidmarkInstance) {
-        SkidmarkInstance = skidmarkInstance;
-    }
+public static void setSkidmarkInstance(Skidmark skidmarkInstance) {
+SkidmarkInstance = skidmarkInstance;
+}
 
-    public static CopyOnWriteArrayList<Module> getTheModulesList() {
-        if(theModulesList == null && !start) {
-            theModulesList = new CopyOnWriteArrayList<>();
-            start = true;
-            theModulesList.add(new Forcefield() {{
-                keybind = Keyboard.KEY_K;
-            }});
+public static CopyOnWriteArrayList<Module> getTheModulesList() {
+if(theModulesList == null && !start) {
+theModulesList = new CopyOnWriteArrayList<>();
+start = true;
+theModulesList.add(new Forcefield() {{
+keybind = Keyboard.KEY_K;
+}});
 
-            theModulesList.add(new SpeedHack() {{
-                keybind = Keyboard.KEY_J;
-            }});
+theModulesList.add(new SpeedHack() {{
+keybind = Keyboard.KEY_J;
+}});
 
-            theModulesList.add(new Velocity() {{
-                keybind = Keyboard.KEY_L;
-            }});
+theModulesList.add(new Velocity() {{
+keybind = Keyboard.KEY_L;
+}});
 
-            theModulesList.add(new Flight() {{
-                keybind = Keyboard.KEY_G;
-            }});
-        }
-        return theModulesList;
-    }
+theModulesList.add(new Flight() {{
+keybind = Keyboard.KEY_G;
+}});
+}
+return theModulesList;
+}
 
-    public static void setTheModulesList(CopyOnWriteArrayList<Module> theModulesList) {
-        Skidmark.theModulesList = theModulesList;
-    }
+public static void setTheModulesList(CopyOnWriteArrayList<Module> theModulesList) {
+Skidmark.theModulesList = theModulesList;
+}
 }
