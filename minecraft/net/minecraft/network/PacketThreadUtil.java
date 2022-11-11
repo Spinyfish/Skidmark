@@ -4,15 +4,15 @@ import net.minecraft.util.IThreadListener;
 
 public class PacketThreadUtil
 {
-    public static <T extends INetHandler> void checkThreadAndEnqueue(final Packet<T> p_180031_0_, final T p_180031_1_, IThreadListener p_180031_2_) throws ThreadQuickExitException
+    public static <T extends INetHandler> void checkThreadAndEnqueue(final Packet<T> Packett, final T Thingy, IThreadListener ITL) throws ThreadQuickExitException
     {
-        if (!p_180031_2_.isCallingFromMinecraftThread())
+        if (!ITL.isCallingFromMinecraftThread())
         {
-            p_180031_2_.addScheduledTask(new Runnable()
+            ITL.addScheduledTask(new Runnable()
             {
                 public void run()
                 {
-                    p_180031_0_.processPacket(p_180031_1_);
+                    Packett.processPacket(Thingy);
                 }
             });
             throw ThreadQuickExitException.INSTANCE;
