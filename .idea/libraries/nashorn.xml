@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nashorn">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/nashorn.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
