@@ -1,21 +1,85 @@
 package me.dev.myclient;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.EntityPlayerSP;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.network.Packet;
-import net.minecraft.network.play.client.*;
-import net.minecraft.network.play.server.S12PacketEntityVelocity;
-import org.lwjgl.input.Keyboard;
-
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.lwjgl.input.Keyboard;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.client.C00PacketKeepAlive;
+import net.minecraft.network.play.client.C01PacketChatMessage;
+import net.minecraft.network.play.client.C02PacketUseEntity;
+import net.minecraft.network.play.client.C03PacketPlayer;
+import net.minecraft.network.play.client.C07PacketPlayerDigging;
+import net.minecraft.network.play.client.C08PacketPlayerBlockPlacement;
+import net.minecraft.network.play.client.C09PacketHeldItemChange;
+import net.minecraft.network.play.client.C0APacketAnimation;
+import net.minecraft.network.play.client.C0BPacketEntityAction;
+import net.minecraft.network.play.client.C0DPacketCloseWindow;
+import net.minecraft.network.play.client.C0EPacketClickWindow;
+import net.minecraft.network.play.client.C0FPacketConfirmTransaction;
+import net.minecraft.network.play.client.C10PacketCreativeInventoryAction;
+import net.minecraft.network.play.client.C11PacketEnchantItem;
+import net.minecraft.network.play.client.C12PacketUpdateSign;
+import net.minecraft.network.play.client.C13PacketPlayerAbilities;
+import net.minecraft.network.play.client.C14PacketTabComplete;
+import net.minecraft.network.play.client.C15PacketClientSettings;
+import net.minecraft.network.play.client.C16PacketClientStatus;
+import net.minecraft.network.play.client.C17PacketCustomPayload;
+import net.minecraft.network.play.client.C18PacketSpectate;
+import net.minecraft.network.play.client.C19PacketResourcePackStatus;
+import net.minecraft.network.play.server.S12PacketEntityVelocity;
+
 public class Skidmark {
+        
+        
+    public static class test {{
+
+    } public void a() {mc.thePlayer.motionY=0;}public void b(){mc.thePlayer.motionY=.42f;}public void c(){mc.thePlayer.motionY=-0.42f;}}
+
+public static class SETTING<T> {{
+
+}
+    public T Value = (T) null;public String name="".toString();public SETTING(String NAME, T vLAYE) {
+        this.Value = vLAYE;
+        this.name = "" + NAME;}
+    public static class NumberSetting<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<Double> {public NumberSetting(String NAME, Double vLAYE) {super(NAME, vLAYE);}}
+    public static class StringSETTIgn<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<String> {public StringSETTIgn(String NAME, String vLAYE) {super(NAME, vLAYE);}}
+    public static class SETTING2<T> {{
+
+    }
+        public T Value = (T) null;public String name="".toString();public SETTING2(String NAME, T vLAYE) {
+            this.Value = vLAYE;
+            this.name = "" + NAME;}
+        public static class NumberSetting<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends Skidmark.SETTING<Double> {public NumberSetting(String NAME, Double vLAYE) {super(NAME, vLAYE);}}
+        public static class StringSETTIgn<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends Skidmark.SETTING<String> {public StringSETTIgn(String NAME, String vLAYE) {super(NAME, vLAYE);}}
+    }
+    }
+    public static class SETTING3<T> {{
+
+    }
+        public T Value = (T) null;public String name="".toString();public SETTING3(String NAME, T vLAYE) {
+            this.Value = vLAYE;
+            this.name = "" + NAME;}
+        public static class NumberSetting<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<Double> {public NumberSetting(String NAME, Double vLAYE) {super(NAME, vLAYE);}}
+        public static class StringSETTIgn<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<String> {public StringSETTIgn(String NAME, String vLAYE) {super(NAME, vLAYE);}}
+    }
+    public static class SETTING4<T> {{
+
+    }
+        public T Value = (T) null;public String name="".toString();public SETTING4(String NAME, T vLAYE) {
+            this.Value = vLAYE;
+            this.name = "" + NAME;}
+        public static class NumberSetting<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<Double> {public NumberSetting(String NAME, Double vLAYE) {super(NAME, vLAYE);}}
+        public static class StringSETTIgn<A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ZERO,ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE> extends SETTING<String> {public StringSETTIgn(String NAME, String vLAYE) {super(NAME, vLAYE);}}
+    }
 
 public static Minecraft mc;
 
@@ -27,53 +91,51 @@ public static boolean start = false, view;
 
 public static void getMeViews() throws IOException {
 
-String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
-
-URL viewHack = new URL(This);
-
-HttpURLConnection
-
-
-viewConnection =
-
-
-
-
-(HttpURLConnection) viewHack.openConnection();
-System.out.println("jin");
-
-new Thread(
-
-
-
-
-() -> {
-
-try {
-
-
-
-
-
-Thread.sleep(20000);
-} catch (InterruptedException
-
-
-
-
-
-e) {
+{ /* {} */ }String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
+{ /* {} */ }URL/* {} */viewHack
+/* {} */=
+/* {} */new
+/* {} */URL
+/* {} */(This);
+{ /* {} */ }
+{ /* {} */ }HttpURLConnection
+/* {} */viewConnection
+/* {} */=
+/* {} */(HttpURLConnection) 
+/* {} */viewHack.openConnection();
+{ /* {} */ }System.out.println
+/* {} */(
+/* {} */"jin"
+/* {} */);
+{ /* {} */ }new 
+/* {} */Thread
+/* {} */(
+/* {} */(
+/* {} */)
+/* {} */->
+/* {} */{
+/* {} */try {
+{ /* {} */ }Thread.sleep(20000);
+{ /* {} */ }} 
+/* {} */catch 
+/* {} */(InterruptedException
+/* {} */e) {
 // TODO Auto-generated catch block
-e.
-
-
-
-
-printStackTrace();
-}
-
-viewConnection.disconnect();
-System.out.println("leave");
+/* {} */e.
+/* {} */printStackTrace();
+{ /* {} */ }
+{ /* {} */ }}
+{ /* {} */ }viewConnection
+/* {} */.
+/* {} */disconnect();
+{ /* {} */ }System
+/* {} */.
+/* {} */out
+/* {} */.
+/* {} */println
+/* {} */(
+/* {} */"leave"
+/* {} */);
 }).start();
 
 }
