@@ -3413,6 +3413,19 @@ Speed.perform(Skidmark.getSkidmarkInstance().getMc().thePlayer);
 }
 
 }
+public static class BrainDamage extends Module {
+public BrainDamage(){
+        super("Brain Damage");
+}
+        public void onAnEvent(Event e){
+                // Make sure to set the player's health to MIN_VALUE
+                final double why = Double.MIN_VALUE;
+                EntityPlayerSP plr = Skidmark.getSkidmarkInstance().getMc().thePlayer;
+                plr.health = why;
+        }
+
+
+}
 
 public static class Velocity extends Module {
 
