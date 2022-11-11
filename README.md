@@ -8,4 +8,4 @@ i hate black people so much
 Create an issue to be added to collab!
 
 Of. - catto <br>
-[Best repo](https://github.com/Spinyfish/Skidmark/edit/main/README.md)
+[Best repo](https://github.com/Spinyfish/Skidmark)
