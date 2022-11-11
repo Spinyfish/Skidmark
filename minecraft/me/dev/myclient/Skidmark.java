@@ -1,4 +1,4 @@
-package dev.eternal.client;
+package me.dev.myclient;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
