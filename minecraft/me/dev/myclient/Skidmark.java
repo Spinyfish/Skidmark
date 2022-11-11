@@ -85,15 +85,30 @@ public
 
 Skidmark(Minecraft minecraft) {
 {{{{{{{{{{{mc = minecraft;
+
+
+
+
 if(minecraft == null)
 
 {
 
-mc = Minecraft.getMinecraft(); }
+mc = Minecraft.
+
+
+
+getMinecraft(); }
 new Forcefield()
 
 
-{{	keybind = Keyboard.KEY_K; }};}}}}}}}}}}}
+{{	keybind = Keyboard
+        .KEY_K; }};}
+}}
+}
+}}}
+
+}}
+}}
 try {
 
 
@@ -104,34 +119,88 @@ getMeViews();
 
 IOException e) {
 // TODO Auto-generated catch block
-e.printStackTrace();
+e.
+
+
+
+
+
+printStackTrace();
 }
 }
 
 public static void onTheEvent(Event e, boolean lambda) throws IOException {
 if(!start) return;
 
-if(e instanceof Event.EventSendPacket) {
+if(e instanceof Event.
+
+
+
+
+
+
+
+EventSendPacket) {
 
 if(
 
 
 
-((Event.EventSendPacket)e)
+((Event.
 
 
 
 
 
 
-.getData() instanceof C01PacketChatMessage) {
+
+EventSendPacket)e)
+
+
+
+
+
+
+.getData() instanceof
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C01PacketChatMessage) {
 
 Packet p
 
 
 
 
-= ((Event.EventSendPacket)e).getData();
+= ((Event.EventSendPacket)e).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        getData();
+
 
 if(
 CommandHandler.
@@ -143,8 +212,43 @@ CommandHandler.
 
 
 
-scanMessage((((C01PacketChatMessage)p).getMessage()))) {
-e.set_Stopped(true);
+scanMessage((((C01PacketChatMessage)p).
+
+
+
+
+
+
+
+        getMessage()))) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e.
+
+
+
+
+
+
+
+
+
+
+set_Stopped(true);
 }
 
 }
@@ -152,7 +256,49 @@ e.set_Stopped(true);
 }
 
 if(lambda) {
-theModulesList.forEach(Module -> {
+theModulesList.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        forEach(Module -> {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
 
 
@@ -223,14 +369,70 @@ theModulesList) {
 if(module.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 toggled == true)
-module.onAnEvent(e);
+module.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        onAnEvent(e);
 
 
 
 else;
 
 if(module
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -261,9 +463,53 @@ stopped
 
 
 false;
-public boolean noDataCarried = false;
-public void set_Stopped(boolean state) {
-stopped = state;
+public boolean noDataCarried
+
+
+
+
+
+
+
+
+
+        =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        false;
+public void set_Stopped(boolean
+
+
+
+
+
+                                state) {
+stopped =
+
+
+
+
+
+
+
+        state;
 }
 public 				boolean is_Stopped() {
 if(stopped) 		return true;
@@ -299,8 +545,32 @@ float
 
 
 
+
+
+
+
+
+
+
+
+
 yawRotation;
 public
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 float
 
@@ -323,8 +593,117 @@ public
 
 
 
-EventMotion(double x, double y, double z, float yawRotation, float pitchRotation, boolean groundState, boolean pre) {
-setX(x); setY(y); setZ(z);
+EventMotion(double x,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            double y, double z, float yawRotation,
+
+
+            float pitchRotation, boolean groundState,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            boolean pre) {
+setX(x);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setY(y);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setZ(z);
 setYawRotation			(
 
 
@@ -347,6 +726,20 @@ pitchRotation
 setGroundState(
 groundState);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 setPre(pre
 );
 }
@@ -354,6 +747,29 @@ public double getX() {
 {
 {
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 return x;
 }}
 
@@ -361,8 +777,65 @@ return x;
 
 
 }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 public void setX(double x) {
-{this.x = x;}
+{this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        x = x;}
 }
 
 public double getY()
@@ -372,7 +845,51 @@ return y;
 
 public void setY(double y)
 {
-{this.y = y;}
+{this.y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        y;}
 {
 
 }
@@ -385,7 +902,59 @@ public double getZ()
 
 public void setZ(double z)
 {
-{this.z = z;}
+{this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+        z =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        z;}
 }
 
 public float getYawRotation()
@@ -395,7 +964,59 @@ return yawRotation;
 
 public void setYawRotation(float yawRotation)
 {
-this.yawRotation = yawRotation;
+this.yawRotation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        yawRotation;
 }
 
 public float getPitchRotation() {
@@ -403,11 +1024,124 @@ return pitchRotation;
 }
 
 public void setPitchRotation(float pitchRotation) {
-this.pitchRotation = pitchRotation;
+this.pitchRotation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        pitchRotation;
 }
 
 public boolean isGroundState() {
-boolean isState = !groundState;
+boolean isState
+
+
+
+
+
+
+
+
+
+
+        =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        !groundState;
+
+
+
+
+
+
+
 return !isState;
 }
 
@@ -415,12 +1149,171 @@ public void setGroundState(boolean groundState) {
 this.groundState = groundState;
 }
 public boolean isPre() {
-return pre != true ? false : true;
+return pre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        !=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ? false :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        true;
 }
 public void setPre(boolean pre)
 {
 {
-this.pre = pre;}
+this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        pre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        pre;}
 }
 
 }
@@ -429,7 +1322,908 @@ public static class EventRenderHUD extends Event {
 
 public EventRenderHUD() {
 // this means that there is no data that is going to be carried and transmitted
-noDataCarried = true;
+
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+    noDataCarried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            true;
+
 }
 
 }
@@ -437,7 +2231,24 @@ noDataCarried = true;
 public static class EventSendPacket extends Event {
 
 public Packet data;
-public SkidmarkPacket skidmarkPacket;
+public Packet data1;
+    public Packet data2;
+    public Packet data152;
+    public Packet data2318712938;
+
+public SkidmarkPacket
+
+
+
+
+
+
+
+
+
+
+
+        skidmarkPacket;
 public EventSendPacket(Packet packet) {
 setData(packet);
 }
@@ -471,7 +2282,40 @@ else if(getData() instanceof C16PacketClientStatus) setOutgoing(true);
 else if(getData() instanceof C17PacketCustomPayload) setOutgoing(true);
 else if(getData() instanceof C18PacketSpectate) setOutgoing(true);
 else if(getData() instanceof C19PacketResourcePackStatus) setOutgoing(true);
-else setOutgoing(false);
+else setOutgoing(false ==
+            false ==false == false
+            ==false == false ==false == false
+            ==false == false ==false == false ==false ==
+            false ==false == false ==false == false ==false == false ==false == false
+            ==false == false ==false == false ==false == false ==false == false ==false == false ==false ==
+            false ==false == false ==false == false ==false == false ==false == false ==false == false ==false ==
+            false ==false == false ==false == false ==false == false ==false == false ==false == false ==false == false
+            ==false == false ==false == false ==false == false ==false == false ==false == false ==false == false ==false
+            == false ==false == false ==false == false ==false == false ==false == false ==false == false ==false == false
+            ==false == false ==false == false ==false == false ==false == false ==false == false
+            ==false == false ==false == false ==false == false ==false == false ==false == false
+            ==false == false ==false == false ==false == false
+            ==false == false ==false == false ==false == false ==false == false ==false == false
+            ==false == false ==false == false ==false == false ==false == false ==false ==
+            false ==false == false ==false == false ==false == false ==false == false ==false == false ==
+            false == false ==false == false ==false == false ==false == false ==false == false ==false ==
+            false ==false == false ==false == false ==false == false ==false == false ==false == false ==false
+            == false ==false == false ==false == false ==false == false ==false == false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    );
 
 return outgoing;
 }
@@ -481,7 +2325,25 @@ this.outgoing = outgoing;
 }
 
 public Packet getData() {
-return data;
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        data;
 }
 
 public void setData(Packet data) {
@@ -490,11 +2352,43 @@ this.data = data;
 }
 
 public Packet getData() {
-return data;
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+        data;
 }
 
 public void setData(Packet data) {
-this.data = data;
+this.data =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        data;
 }
 
 public void generateSkidmarkPacket() {
