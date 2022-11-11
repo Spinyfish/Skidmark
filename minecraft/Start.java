@@ -9,7 +9,7 @@ public class Start
     public static void main(String[] args)
     {
         System.out.println("spiny has smol testis");
-        Main.main(concat(new String[] {"--version", "mcp", "--accessToken", "0", "--assetsDir", "assets", "--assetIndex", "1.8", "--userProperties", "{}"}, args));
+        Main.main(concat(new String[] {"--version", "Skidmark", "--accessToken", "0", "--assetsDir", "assets", "--assetIndex", "1.8", "--userProperties", "{}"}, args));
     }
 
     public static <T> T[] concat(T[] first, T[] second)
