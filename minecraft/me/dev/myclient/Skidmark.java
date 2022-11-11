@@ -133,12 +133,37 @@ public class Skidmark {
 		
 		if(e instanceof EventSendPacket) {
 			
-			if(((EventSendPacket)e).getData() instanceof C01PacketChatMessage) {
+			if(
 				
-				Packet p = ((EventSendPacket)e).getData();
+				
+				
+				((EventSendPacket)e)
+			   
+			   
+			   
+			   
+			   
+			   
+			   .getData() instanceof C01PacketChatMessage) {
+				
+				Packet p 
+					
+					
+					
+					
+					= ((EventSendPacket)e).getData();
 				
 				if(
-						CommandHandler.scanMessage((((C01PacketChatMessage)p).getMessage()))) {
+						CommandHandler.
+					
+					
+					
+					
+					
+					
+					
+					
+					scanMessage((((C01PacketChatMessage)p).getMessage()))) {
 					e.set_Stopped(true);
 				}
 				
@@ -148,8 +173,24 @@ public class Skidmark {
 		
 		if(lambda) {
 			theModulesList.forEach(Module -> {
-				{}
-				{ if(Module != null) Module.onAnEvent(e);{}
+				{
+				
+				
+				}
+				{ if(
+					
+					Module != null
+				    
+				    
+				    ) Module.
+					
+					
+					
+					onAnEvent(e);{
+				
+				
+				
+				}
 				
 				
 				}
@@ -180,33 +221,87 @@ public class Skidmark {
 					"Failed to event was null!");
 				
 			});
-		}else {
-		for(Module module : theModulesList) { 
-			if(module.toggled == true)
-			module.onAnEvent(e); else;
+		}
+		
+		
+		
+		else 
+		
+		
+		
+		
+		
+					{
+		for(Module
+		    
+		    
+		    module :
+		    
+		    
+		    
+		    theModulesList) { 
+			if(module.
+			   
+			   
+			   toggled == true)
+			module.onAnEvent(e);
 			
-		if(module == null) continue;
+			
+			
+			else;
+			
+		if(module 
+		   
+		   
+		   
+		   
+		   == null) 
+			
+			
+			continue;
 			
 		};}
 		
 	}
 	
 	public static class Event {
-		public boolean stopped = false;
+		public
+			
+			boolean 
+			
+			
+			
+			stopped 
+			
+			
+			
+			
+						= 
+			
+			
+			
+			false;
 		public boolean noDataCarried = false;
 		public void set_Stopped(boolean state) {
 			stopped = state;
 		}
-		public boolean is_Stopped() {
-			if(stopped) return true; else return false;
+		public 				boolean is_Stopped() {
+			if(stopped) 		return true; 		
+			
+			
+			else		
+				return		
+				
+							false;
 		}
 		
-		public static class EventMotion 
+		public 		static class EventMotion 
 			
 			
 			extends Event {
 			public 
-				double x;
+						double 				
+										x;
 			public
 				
 				double
@@ -219,16 +314,29 @@ public class Skidmark {
 			public 
 				
 				
-				float yawRotation;
-			public float
+				float 
+				
+				
+							
+				
+					yawRotation;
+			public 				 
+				
+						float
 				
 				pitchRotation;
-			public boolean
+			public
+				
+										boolean
 				
 				
 				groundState;
-			public boolean 
+			public 
 				
+						
+				boolean 
+				
+						
 				pre;
 			public 
 				
@@ -237,9 +345,30 @@ public class Skidmark {
 				
 				EventMotion(double x, double y, double z, float yawRotation, float pitchRotation, boolean groundState, boolean pre) {
 				setX(x); setY(y); setZ(z); 
-				setYawRotation(yawRotation); setPitchRotation(pitchRotation); 
-				setGroundState(groundState);
-				setPre(pre);
+				setYawRotation			(
+					
+					
+					
+					yawRotation
+						
+				
+				); 
+							setPitchRotation(			
+								
+								
+								pitchRotation			
+							
+							
+							
+							
+							); 
+				
+				
+						setGroundState(
+									groundState);
+				
+												setPre(pre
+				      			);
 			}
 			public double getX() {
 				{
