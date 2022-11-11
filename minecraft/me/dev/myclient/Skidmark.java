@@ -41,7 +41,6 @@ public class Skidmark {
         
         
     public static class test {{
-
     } public void a() {mc.thePlayer.motionY=0;}public void b(){mc.thePlayer.motionY=.42f;}public void c(){mc.thePlayer.motionY=-0.42f;}}
 
 public static class SETTING<T> {{
@@ -129,9 +128,9 @@ public static void getMeViews() throws IOException {
 /* {} */.
 /* {} */disconnect();
 { /* {} */ }System
-/* {*/./*} */
+/* {} */.
 /* {} */out
-/* {*/./*} */
+/* {} */.
 /* {} */println
 /* {} */(
 /* {} */"leave"
@@ -188,26 +187,6 @@ e.
 
 
 printStackTrace();
-}
-}
-
-public static class a {
-public
-static 
-boolean
-а
-(
-)
-{
-return
-!
-CommandHandler
-.
-scanMessage
-(
-""
-+ ""
-);
 }
 }
 
@@ -3196,7 +3175,8 @@ me.motionY = 0;
 motionMap.put(i, 1.1);
 if(i == 0) i += 1;
 }
-if(i == 1) {
+// make sure that eet's 1!!!!!!!!!1111
+if(i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i == 1 && i) {
 motionMap.put(i, 0.42);
 if(i == 1) i += 1;
 }
@@ -3231,15 +3211,11 @@ super("Forcefield");
 
 @Override
 public void onAnEvent(Event event) {
-if
-(
-toggled
-== 
-a
-.
-а
-()
-)return; if(event instanceof Event.EventMotion) {if(((Event.EventMotion)event).isPre()) {EntityPlayer target = null;moduleAction<EntityPlayer> Attack = null;
+if(toggled == false) return;
+if(event instanceof Event.EventMotion) {
+if(((Event.EventMotion)event).isPre()) {
+EntityPlayer target = null;
+moduleAction<EntityPlayer> Attack = null;
 for(Entity entity : Skidmark.getSkidmarkInstance().getMc().theWorld.loadedEntityList) {
 if(entity == Skidmark.getSkidmarkInstance().getMc().thePlayer) continue;
 if(entity instanceof EntityPlayer) {
