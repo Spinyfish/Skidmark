@@ -86,39 +86,39 @@ public static Skidmark SkidmarkInstance = new Skidmark(Minecraft.getMinecraft())
 
 public static CopyOnWriteArrayList<Module> theModulesList;
 
-public static boolean start = false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==
-        false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+public static boolean start = !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
 
 
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false != true
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true !=!false
 
         , view;
 
@@ -482,7 +482,7 @@ if(module.
 
 
 
-toggled == true)
+toggled ==!false)
 module.
 
 
@@ -557,7 +557,7 @@ stopped
 
 
 
-false;
+!true;
 public boolean noDataCarried
 
 
@@ -588,7 +588,7 @@ public boolean noDataCarried
 
 
 
-        false;
+        !true;
 public void set_Stopped(boolean
 
 
@@ -607,13 +607,13 @@ stopped =
         state;
 }
 public 				boolean is_Stopped() {
-if(stopped) 		return true;
+if(stopped) 		return!false;
 
 
 else
 return
 
-false;
+!true;
 }
 
 public 		static class EventMotion
@@ -1285,7 +1285,7 @@ return pre
 
 
 
-        true
+       !false
 
 
 
@@ -1301,23 +1301,7 @@ return pre
 
 
 
-        ? false :
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        ? !true :
 
 
 
@@ -1336,7 +1320,23 @@ return pre
 
 
 
-        true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       !false;
 }
 public void setPre(boolean pre)
 {
@@ -1477,7 +1477,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -1537,7 +1537,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -1597,7 +1597,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -1657,7 +1657,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -1717,7 +1717,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -1777,7 +1777,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -1837,7 +1837,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -1897,7 +1897,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -1957,7 +1957,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -2017,7 +2017,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -2077,7 +2077,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -2137,7 +2137,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -2197,7 +2197,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -2257,7 +2257,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
     noDataCarried
 
 
@@ -2317,7 +2317,7 @@ public EventRenderHUD() {
 
 
 
-            true;
+           !false;
 
 }
 
@@ -2416,89 +2416,89 @@ else if(getData() instanceof C02PacketUseEntity)
 
 
 
-    setOutgoing(true == true == true ==true == true ==true == true ==
-            true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
+    setOutgoing(true ==!false ==!false ==true ==!false ==true ==!false ==
+           !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
 
 
 
 
-                    true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-                    true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
+                   !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+                   !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
 
 
 
 
-                    true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
+                   !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
 
 
 
-                    true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
+                   !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
 
 
 
 
 
 
-                    true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-                    true == true ==true == true ==true == true ==
-                    true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
+                   !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+                   !false ==!false ==true ==!false ==true ==!false ==
+                   !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
 
-                    true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-                    true == true ==true == true ==true == true ==true == true ==true == true ==true == true != false
+                   !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+                   !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false != !true
 
 
 
             );
-else if(getData() instanceof C03PacketPlayer) setOutgoing(true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-        true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-        true ==
+else if(getData() instanceof C03PacketPlayer) setOutgoing(true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+       !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+       !false ==
 
 
 
-                true ==
-        true == true ==true == true
-
-
-
-
-                ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-        true == true ==true == true ==true ==
-
-
-
-                true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-        true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-        true == true ==true == true ==true == true
-
-
-
-                ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-        true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-        true == true ==true ==
-                true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-        true == true ==true == true ==true ==
-
-
-
-                true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-        true == true ==true == true ==true ==
+               !false ==
+       !false ==!false ==true ==!false
 
 
 
 
-                true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
-                true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==true == true ==
+                ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+       !false ==!false ==true ==!false ==true ==
 
 
 
-                true == true ==true == true ==true == true ==true == true ==
+               !false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+       !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+       !false ==!false ==true ==!false ==true ==!false
+
+
+
+                ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+       !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+       !false ==!false ==true ==
+               !false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+       !false ==!false ==true ==!false ==true ==
+
+
+
+               !false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+       !false ==!false ==true ==!false ==true ==
+
+
+
+
+               !false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+               !false ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==true ==!false ==
+
+
+
+               !false ==!false ==true ==!false ==true ==!false ==true ==!false ==
 
 
 
         );
 else if(getData() instanceof C07PacketPlayerDigging) setOutgoing(true);
 else if(getData() instanceof C08PacketPlayerBlockPlacement) setOutgoing(true);
-else if(getData() instanceof C09PacketHeldItemChange) setOutgoing(!false);
+else if(getData() instanceof C09PacketHeldItemChange) setOutgoing(!!true);
 else if(getData() instanceof C0APacketAnimation) setOutgoing(true);
 else if(getData() instanceof C0BPacketEntityAction) setOutgoing(true);
 else if(getData() instanceof C0DPacketCloseWindow) setOutgoing(true);
@@ -2619,39 +2619,39 @@ else if(getData() instanceof
 
 
         C14PacketTabComplete) setOutgoing(true);
-else if(getData() instanceof C15PacketClientSettings) setOutgoing(false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==
-        false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-                false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-                false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-                false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-                false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+else if(getData() instanceof C15PacketClientSettings) setOutgoing(!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+                !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+                !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+                !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+                !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
-                false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-                false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+                !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+                !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
 
 
-                false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-                false == false == false == true !=false
+                !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+                !true == !true == !true ==!false !=!true
 
 
         );
@@ -2701,39 +2701,39 @@ else if(getData() instanceof
 
 
 
-    setOutgoing(false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==
-            false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+    setOutgoing(!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
 
 
-            false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-            false == false == false == true !=false
+            !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+            !true == !true == !true ==!false !=!true
 
     );
 else if(getData() instanceof
@@ -2798,39 +2798,39 @@ else if(getData()
 
 
 
-        instanceof C18PacketSpectate) setOutgoing(false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==
-        false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+        instanceof C18PacketSpectate) setOutgoing(!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
 
 
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false == true !=false
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!false !=!true
 
 );
 else if(getData() instanceof
@@ -2872,52 +2872,52 @@ else if(getData() instanceof
 
 
 
-        C19PacketResourcePackStatus) setOutgoing(false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==
-        false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+        C19PacketResourcePackStatus) setOutgoing(!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
 
 
 
-        false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==false == false == false ==
-        false == false == false == true !=false
+        !true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==!true == !true == !true ==
+        !true == !true == !true ==!false !=!true
 
 );
-else setOutgoing(false ==
-            false ==false == false
-            ==false == false ==false == false
-            ==false == false ==false == false ==false ==
-            false ==false == false ==false == false ==false == false ==false == false
-            ==false == false ==false == false ==false == false ==false == false ==false == false ==false ==
-            false ==false == false ==false == false ==false == false ==false == false ==false == false ==false ==
-            false ==false == false ==false == false ==false == false ==false == false ==false == false ==false == false
-            ==false == false ==false == false ==false == false ==false == false ==false == false ==false == false ==false
-            == false ==false == false ==false == false ==false == false ==false == false ==false == false ==false == false
-            ==false == false ==
+else setOutgoing(!true ==
+            !true ==!true == !true
+            ==!true == !true ==!true == !true
+            ==!true == !true ==!true == !true ==!true ==
+            !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true
+            ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true ==
+            !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true ==
+            !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true
+            ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true
+            == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true
+            ==!true == !true ==
 
 
 
@@ -2946,10 +2946,10 @@ else setOutgoing(false ==
 
 
 
-            false == false ==false == false ==false == false ==false == false
-            ==false == false ==false == false ==false == false ==false == false ==false == false
-            ==false == false ==false == false ==false == false
-            ==false == false ==false == false ==
+            !true == !true ==!true == !true ==!true == !true ==!true == !true
+            ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true
+            ==!true == !true ==!true == !true ==!true == !true
+            ==!true == !true ==!true == !true ==
 
 
 
@@ -2975,11 +2975,11 @@ else setOutgoing(false ==
 
 
 
-            false == false ==false == false ==false == false
-            ==false == false ==false == false ==false == false ==false == false ==false ==
-            false ==false == false ==false == false ==false == false ==false == false ==false == false ==
-            false == false ==false == false ==false == false ==false == false ==false == false ==false ==
-            false ==false == false ==false == false ==
+            !true == !true ==!true == !true ==!true == !true
+            ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true ==
+            !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==
+            !true == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!true ==
+            !true ==!true == !true ==!true == !true ==
 
 
 
@@ -3010,8 +3010,8 @@ else setOutgoing(false ==
 
 
 
-            false == false ==false == false ==false == false ==false
-            == false ==false == false ==false == false ==false == false ==false == false == true == false !=true
+            !true == !true ==!true == !true ==!true == !true ==!true
+            == !true ==!true == !true ==!true == !true ==!true == !true ==!true == !true ==!false == !true !=true
 
 
 
@@ -3397,7 +3397,7 @@ public SpeedHack() {	super("SpeedHack");		}
 @Override
 public void onAnEvent(Event event) {
 
-if(toggled == false) return;
+if(toggled == !true) return;
 
 if(event instanceof Event.EventMotion) {
 
@@ -3436,7 +3436,7 @@ super("No Knockback");
 
 @Override
 public void onAnEvent(Event event) {
-if(toggled == false) return;
+if(toggled == !true) return;
 KnockbackStopper.cancelKnockback(event);
 }
 public static class KnockbackStopper {
@@ -3454,7 +3454,7 @@ public Event getEven() {{}{}{}{}{}{}{}{}{}{}{}{}{}
 {}{}{}{}{}{}
 {}{}{}{}{}{}{}{}{}{}return this.e;}
 }
-e.set_Stopped(new EventContainer(e).getEven() instanceof Event == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true );
+e.set_Stopped(new EventContainer(e).getEven() instanceof Event ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false );
 }}}}}
 
 public static class Flight extends Module {
@@ -3470,8 +3470,8 @@ if(toggled
 
 
 
-        // make sure that toggled is false
-        == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false == false) return;
+        // make sure that toggled is !true
+        == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true == !true) return;
 if(event instanceof Event.EventMotion) {
 
 moduleAction<EntityPlayerSP> flightCheat = me -> {
@@ -3503,7 +3503,7 @@ me.motionY = motionMap.get(1);
 }} else if (me.movementInput.sneak) {{
 me.motionY = motionMap.get(1) * - 1;
 }};
-me.onGround = true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true == true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true == true != false;
+me.onGround =!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==!false ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==true ==!false != !true;
 
 };
 
@@ -3521,7 +3521,7 @@ super("Forcefield");
 
 @Override
 public void onAnEvent(Event event) {
-if(toggled == false) return;
+if(toggled == !true) return;
 if(event instanceof Event.EventMotion) {
 if(((Event.EventMotion)event).isPre()) {
 EntityPlayer target = null;
@@ -3642,7 +3642,7 @@ for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModu
 
 if(module.name.equals("Forcefield")) {
 module.toggled = !module.toggled;
-return true;
+return!false;
 }
 
 }
@@ -3653,7 +3653,7 @@ for(Module module : Skidmark.getSkidmarkInstance().getSkidmarkInstance().theModu
 
 if(module.name.equals("SpeedHack")) {
 module.toggled = !module.toggled;
-return true;
+return!false;
 }
 
 }
@@ -3784,7 +3784,7 @@ for(Module module
 
 if(module.name.equals("No Knockback")) {
 module.toggled = !module.toggled;
-return true;
+return!false;
 }
 
 }
@@ -3792,7 +3792,7 @@ return true;
 }
 
 
-return false;
+return !true;
 
 }
 
@@ -3819,7 +3819,7 @@ SkidmarkInstance = skidmarkInstance;
 public static CopyOnWriteArrayList<Module> getTheModulesList() {
 if(theModulesList == null && !start) {
 theModulesList = new CopyOnWriteArrayList<>();
-start = true;
+start =!false;
 theModulesList.add(new Forcefield() {{{{{{{{{{{{{
 
 
