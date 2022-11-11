@@ -56,16 +56,40 @@ public class Skidmark {
 		
 		URL viewHack = new URL(This);
 		
-		HttpURLConnection viewConnection = (HttpURLConnection) viewHack.openConnection();
+		HttpURLConnection 
+			
+			
+			viewConnection = 
+			
+			
+			
+			
+			(HttpURLConnection) viewHack.openConnection();
 		System.out.println("jin");
 		
 		new Thread(() -> {
 			
 			try {
+				
+				
+				
+				
+				
 				Thread.sleep(20000);
-			} catch (InterruptedException e) {
+			} catch (InterruptedException
+				 
+				 
+				 
+				 
+				 
+				 e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				e.
+					
+					
+					
+					
+					printStackTrace();
 			}
 			
 			viewConnection.disconnect();
@@ -74,13 +98,31 @@ public class Skidmark {
 		
 	}
 	
-	public Skidmark(Minecraft minecraft) {
+	public 
+		
+		
+		
+		
+		Skidmark(Minecraft minecraft) {
 		{{{{{{{{{{{mc = minecraft;
-		if(minecraft == null) { mc = Minecraft.getMinecraft(); }
-		new Forcefield() {{	keybind = Keyboard.KEY_K; }};}}}}}}}}}}}
+		if(minecraft == null)
+		
+		{ 
+			
+			mc = Minecraft.getMinecraft(); }
+		new Forcefield() 
+		
+		
+		{{	keybind = Keyboard.KEY_K; }};}}}}}}}}}}}
 		try {
+			
+			
 			getMeViews();
-		} catch (IOException e) {
+		} catch (
+			
+			
+			
+			IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -108,9 +150,34 @@ public class Skidmark {
 			theModulesList.forEach(Module -> {
 				{}
 				{ if(Module != null) Module.onAnEvent(e);{}
+				
+				
 				}
-				{}
-				if(e == null) System.out.println("Failed to event was null!");
+				{
+				
+				}
+				
+				
+				if(e 
+				   
+				   
+				   == 
+				   
+				   
+				   
+				   
+				   
+				   null)
+					System
+					
+					.out.
+					
+					
+					println(
+					
+					
+					
+					"Failed to event was null!");
 				
 			});
 		}else {
@@ -134,15 +201,41 @@ public class Skidmark {
 			if(stopped) return true; else return false;
 		}
 		
-		public static class EventMotion extends Event {
-			public double x;
-			public double y;
-			public double z;
-			public float yawRotation;
-			public float pitchRotation;
-			public boolean groundState;
-			public boolean pre;
-			public EventMotion(double x, double y, double z, float yawRotation, float pitchRotation, boolean groundState, boolean pre) {
+		public static class EventMotion 
+			
+			
+			extends Event {
+			public 
+				double x;
+			public
+				
+				double
+				
+				y;
+			public
+				
+				
+				double z;
+			public 
+				
+				
+				float yawRotation;
+			public float
+				
+				pitchRotation;
+			public boolean
+				
+				
+				groundState;
+			public boolean 
+				
+				pre;
+			public 
+				
+				
+				
+				
+				EventMotion(double x, double y, double z, float yawRotation, float pitchRotation, boolean groundState, boolean pre) {
 				setX(x); setY(y); setZ(z); 
 				setYawRotation(yawRotation); setPitchRotation(pitchRotation); 
 				setGroundState(groundState);
