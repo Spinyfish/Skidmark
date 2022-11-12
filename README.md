@@ -3,7 +3,7 @@ The worlds best minecraft client! Join me on my journey!
 
 this account has been token logged by spiny per download iprat loperesti kant edition dan savage games
 
-i hate black people so much
+I h8te black people so much
 
 Create an issue to be added to collab!
 
