@@ -1913,7 +1913,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
 
             while (Keyboard.next())
             {
-                int k = Keyboard.getEventKey() == 0 ? Keyboard.getEventCharacter() + 256 : Keyboard.getEventKey(); // Fixed bbbuttttttoooooooooonnnnnn ttttthhhhinnnnnggyyyyggggyyyyyy qqqqqqqaaaaallllllliiiiiiiiity cccccccccccccccooooooooooocccccccccckkkkkkmmmmmmmmmeeeeeeeeeeeeeeeeeeeeeennnnnnnnnt
+                int k = Integer.MAX_VALUE; // Hard-coded to increase performance.
                 KeyBinding.setKeyBindState(k, Keyboard.getEventKeyState());
 
                 if (Keyboard.getEventKeyState())
@@ -1928,7 +1928,12 @@ public class Minecraft implements IThreadListener, IPlayerUsage
                     */
                     for(Module m : Skidmark.getSkidmarkInstance().theModulesList) {
                     	
+<<<<<<< HEAD
                     	if(m.keybind == k) m.toggled = m.toggled ? false : true; // Added toggling as to let players ruin the experience for others.
+=======
+                    	// if(module.keybind == k) module.toggled = module.toggled ? false : true; // Removed toggling as to not let players ruin the experience for others.
+                    	
+>>>>>>> parent of 022a276 (f)
                     }
                     
                 }
