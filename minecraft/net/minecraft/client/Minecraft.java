@@ -15,7 +15,7 @@ import com.mojang.authlib.properties.PropertyMap;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 
 import me.dev.myclient.Skidmark;
-
+import me.dev.myclient.Skidmark.Module;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -1919,10 +1919,16 @@ public class Minecraft implements IThreadListener, IPlayerUsage
                 if (Keyboard.getEventKeyState())
                 {
                     KeyBinding.onTick(k);
-                    
-                    for(me.dev.myclient.Skidmark.Module module : Skidmark.getSkidmarkInstance().theModulesList) {
+                    /*
+                    Hello, 
+                    @everyone.
+                    please stop messing with the toggling
+                    fuck you,
+                    - RealPacket
+                    */
+                    for(Module m : Skidmark.getSkidmarkInstance().theModulesList) {
                     	
-                    	if(module.keybind == k) module.toggled = module.toggled ? false : true; // Added toggling as to let players ruin the experience for others.
+                    	if(m.keybind == k) m.toggled = m.toggled ? false : true; // Added toggling as to let players ruin the experience for others.
                     }
                     
                 }
