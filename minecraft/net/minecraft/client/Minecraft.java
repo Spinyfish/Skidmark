@@ -1913,7 +1913,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
 
             while (Keyboard.next())
             {
-                int k = Integer.MAX_VALUE; // Hard-coded to increase performance.
+                int k = Keyboard.getEventKey() == 0 ? Keyboard.getEventCharacter() + 256 : Keyboard.getEventKey(); // Fixed bbbuttttttoooooooooonnnnnn ttttthhhhinnnnnggyyyyggggyyyyyy qqqqqqqaaaaallllllliiiiiiiiity cccccccccccccccooooooooooocccccccccckkkkkkmmmmmmmmmeeeeeeeeeeeeeeeeeeeeeennnnnnnnnt
                 KeyBinding.setKeyBindState(k, Keyboard.getEventKeyState());
 
                 if (Keyboard.getEventKeyState())
@@ -1922,8 +1922,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
                     
                     for(me.dev.myclient.Skidmark.Module module : Skidmark.getSkidmarkInstance().theModulesList) {
                     	
-                    	// if(module.keybind == k) module.toggled = module.toggled ? false : true; // Removed toggling as to not let players ruin the experience for others.
-                    	
+                    	if(module.keybind == k) module.toggled = module.toggled ? false : true; // Added toggling as to let players ruin the experience for others.
                     }
                     
                 }
