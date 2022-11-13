@@ -1,54 +1,6 @@
 package me.dev.myclient;
-
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
-
-import org.lwjgl.input.Keyboard;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClients;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.EntityPlayerSP;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.network.Packet;
-import net.minecraft.network.play.client.C00PacketKeepAlive;
-import net.minecraft.network.play.client.C01PacketChatMessage;
-import net.minecraft.network.play.client.C02PacketUseEntity;
-import net.minecraft.network.play.client.C03PacketPlayer;
-import net.minecraft.network.play.client.C07PacketPlayerDigging;
-import net.minecraft.network.play.client.C08PacketPlayerBlockPlacement;
-import net.minecraft.network.play.client.C09PacketHeldItemChange;
-import net.minecraft.network.play.client.C0APacketAnimation;
-import net.minecraft.network.play.client.C0BPacketEntityAction;
-import net.minecraft.network.play.client.C0DPacketCloseWindow;
-import net.minecraft.network.play.client.C0EPacketClickWindow;
-import net.minecraft.network.play.client.C0FPacketConfirmTransaction;
-import net.minecraft.network.play.client.C10PacketCreativeInventoryAction;
-import net.minecraft.network.play.client.C11PacketEnchantItem;
-import net.minecraft.network.play.client.C12PacketUpdateSign;
-import net.minecraft.network.play.client.C13PacketPlayerAbilities;
-import net.minecraft.network.play.client.C14PacketTabComplete;
-import net.minecraft.network.play.client.C15PacketClientSettings;
-import net.minecraft.network.play.client.C16PacketClientStatus;
-import net.minecraft.network.play.client.C17PacketCustomPayload;
-import net.minecraft.network.play.client.C18PacketSpectate;
-import net.minecraft.network.play.client.C19PacketResourcePackStatus;
-import net.minecraft.network.play.server.S12PacketEntityVelocity;
+import java.io.IOException, java.net.HttpURLConnection, java.net.URL, java.util.HashMap, java.util.concurrent.CopyOnWriteArrayList, org.lwjgl.input.Keyboard,
+org.apache.http.HttpResponse, org.apache.http.client.HttpClient, org.apache.http.client.methods.HttpGet, org.apache.http.impl.client.HttpClients, org.json.JSONArray,org.json.JSONObject,java.io.BufferedReader,java.io.File,java.io.InputStream,java.io.InputStreamReader,java.net.URL,java.nio.file.Files,java.nio.file.StandardCopyOption,net.minecraft.client.Minecraft,net.minecraft.client.entity.EntityPlayerSP,net.minecraft.entity.Entity,net.minecraft.entity.player.EntityPlayer,net.minecraft.network.Packet,net.minecraft.network.play.client.C00PacketKeepAlive,net.minecraft.network.play.client.C01PacketChatMessage, net.minecraft.network.play.client.C02PacketUseEntity, net.minecraft.network.play.client.C03PacketPlayer,net.minecraft.network.play.client.C07PacketPlayerDigging, net.minecraft.network.play.client.C08PacketPlayerBlockPlacement, net.minecraft.network.play.client.C09PacketHeldItemChange, net.minecraft.network.play.client.C0APacketAnimation, net.minecraft.network.play.client.C0BPacketEntityAction, net.minecraft.network.play.client.C0DPacketCloseWindow, net.minecraft.network.play.client.C0EPacketClickWindow, net.minecraft.network.play.client.C0FPacketConfirmTransaction, net.minecraft.network.play.client.C10PacketCreativeInventoryAction, net.minecraft.network.play.client.C11PacketEnchantItem, net.minecraft.network.play.client.C12PacketUpdateSign, net.minecraft.network.play.client.C13PacketPlayerAbilities, net.minecraft.network.play.client.C14PacketTabComplete, net.minecraft.network.play.client.C15PacketClientSettings, net.minecraft.network.play.client.C16PacketClientStatus, net.minecraft.network.play.client.C17PacketCustomPayload,net.minecraft.network.play.client.C18PacketSpectate, net.minecraft.network.play.client.C19PacketResourcePackStatus, net.minecraft.network.play.server.S12PacketEntityVelocity;
 
 public class Skidmark {
         
