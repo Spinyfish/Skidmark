@@ -291,8 +291,10 @@ public class Minecraft implements IThreadListener, IPlayerUsage // GG, gg, Gg go
      * When you place a block, it's set to 6, decremented once per tick, when it's 0, you can place another block.
      */
     public int rightClickDelayTimer = 0;
-    public String serverName;
+    public class serverDetails {
+    public String serverIP;
     public int serverPort;
+    }
 
     /**
      * Does the actual gameplay have focus. If so then mouse and keys will effect the player instead of menus.
@@ -391,8 +393,8 @@ public class Minecraft implements IThreadListener, IPlayerUsage // GG, gg, Gg go
 
         if (gameConfig.serverInfo.serverName != null)
         {
-            this.serverName = gameConfig.serverInfo.serverName;
-            this.serverPort = gameConfig.serverInfo.serverPort;
+            this.serverDetails.serverIP = gameConfig.serverInfo.serverName;
+            this.serverDetails.serverPort = gameConfig.serverInfo.serverPort;
         }
 
         ImageIO.setUseCache(false);
@@ -573,9 +575,9 @@ public class Minecraft implements IThreadListener, IPlayerUsage // GG, gg, Gg go
         this.checkGLError("Post startup");
         this.ingameGUI = new GuiIngame(this);
 
-        if (this.serverName != null)
+        if (this.serverDetails.serverIP != null)
         {
-            this.displayGuiScreen(new GuiConnecting(new GuiMainMenu(), this, this.serverName, this.serverPort));
+            this.displayGuiScreen(new GuiConnecting(new GuiMainMenu(), this, this.serverDetails.serverIP, this.serverDetails.serverPort));
         }
         else
         {
