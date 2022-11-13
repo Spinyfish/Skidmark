@@ -188,7 +188,7 @@ import org.lwjgl.opengl.OpenGLException;
 import org.lwjgl.opengl.PixelFormat;
 import org.lwjgl.util.glu.GLU;
 
-public class Minecraft implements IThreadListener, IPlayerUsage
+public class Minecraft implements IThreadListener, IPlayerUsage // GG, gg, Gg good game, Good Game, gOoD gAmE, why
 {
     private static final Logger logger = LogManager.getLogger();
     private static final ResourceLocation locationMojangPng = new ResourceLocation("textures/gui/title/mojang.png");
@@ -210,7 +210,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     /**
      * Set to 'this' in Minecraft constructor; used by some settings get methods
      */
-    private static Minecraft theMinecraft;
+    private static final Minecraft theMinecraft = new Minecraft();
     public PlayerControllerMP playerController;
     private boolean fullscreen;
     private boolean enableGLErrorChecking = true;
@@ -249,7 +249,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     public EntityRenderer entityRenderer;
 
     /** Mouse left click counter */
-    private int leftClickCounter;
+    public int leftClickCounter;
 
     /** Display width */
     private int tempDisplayWidth;
@@ -290,9 +290,9 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     /**
      * When you place a block, it's set to 6, decremented once per tick, when it's 0, you can place another block.
      */
-    private int rightClickDelayTimer;
-    private String serverName;
-    private int serverPort;
+    public int rightClickDelayTimer = 0;
+    public String serverName;
+    public int serverPort;
 
     /**
      * Does the actual gameplay have focus. If so then mouse and keys will effect the player instead of menus.
@@ -368,7 +368,6 @@ public class Minecraft implements IThreadListener, IPlayerUsage
 
     public Minecraft(GameConfiguration gameConfig)
     {
-        theMinecraft = this;
         this.mcDataDir = gameConfig.folderInfo.mcDataDir;
         this.fileAssets = gameConfig.folderInfo.assetsDir;
         this.fileResourcepacks = gameConfig.folderInfo.resourcePacksDir;
@@ -428,7 +427,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
                         {
                             this.runGameLoop();
                         }
-                        catch (OutOfMemoryError var10)
+                        catch (OutOfMemoryError _)
                         {
                             this.freeMemory();
                             this.displayGuiScreen(new GuiMemoryErrorScreen());
@@ -548,7 +547,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         GlStateManager.loadIdentity();
         GlStateManager.matrixMode(5888);
         this.checkGLError("Startup");
-        
+        // why is this here >.<
         Skidmark.getSkidmarkInstance().getTheModulesList();
         
         this.textureMapBlocks = new TextureMap("textures");
@@ -630,7 +629,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     private void createDisplay() throws LWJGLException
     {
         Display.setResizable(true);
-        Display.setTitle("Minecraft 1.8.9");
+        Display.setTitle("Skidmark V0.5, MC 1.8.9");
 
         try
         {
@@ -694,7 +693,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
             }
             catch (IOException ioexception)
             {
-                logger.error((String)"Couldn\'t set icon", (Throwable)ioexception);
+                logger.error((String)"Couldn't set icon", (Throwable)ioexception);
             }
             finally
             {
@@ -969,12 +968,12 @@ public class Minecraft implements IThreadListener, IPlayerUsage
     {
         float f = 0.00390625F;
         float f1 = 0.00390625F;
-        WorldRenderer worldrenderer = Tessellator.getInstance().getWorldRenderer();
-        worldrenderer.begin(7, DefaultVertexFormats.POSITION_TEX_COLOR);
-        worldrenderer.pos((double)posX, (double)(posY + height), 0.0D).tex((double)((float)texU * f), (double)((float)(texV + height) * f1)).color(red, green, blue, alpha).endVertex();
-        worldrenderer.pos((double)(posX + width), (double)(posY + height), 0.0D).tex((double)((float)(texU + width) * f), (double)((float)(texV + height) * f1)).color(red, green, blue, alpha).endVertex();
-        worldrenderer.pos((double)(posX + width), (double)posY, 0.0D).tex((double)((float)(texU + width) * f), (double)((float)texV * f1)).color(red, green, blue, alpha).endVertex();
-        worldrenderer.pos((double)posX, (double)posY, 0.0D).tex((double)((float)texU * f), (double)((float)texV * f1)).color(red, green, blue, alpha).endVertex();
+        WorldRenderer WR = Tessellator.getInstance().getWorldRenderer();
+        WR.begin(7, DefaultVertexFormats.POSITION_TEX_COLOR);
+        WR.pos((double)posX, (double)(posY + height), 0.0D).tex((double)((float)texU * f), (double)((float)(texV + height) * f1)).color(red, green, blue, alpha).endVertex();
+        WR.pos((double)(posX + width), (double)(posY + height), 0.0D).tex((double)((float)(texU + width) * f), (double)((float)(texV + height) * f1)).color(red, green, blue, alpha).endVertex();
+        WR.pos((double)(posX + width), (double)posY, 0.0D).tex((double)((float)(texU + width) * f), (double)((float)texV * f1)).color(red, green, blue, alpha).endVertex();
+        WR.pos((double)posX, (double)posY, 0.0D).tex((double)((float)texU * f), (double)((float)texV * f1)).color(red, green, blue, alpha).endVertex();
         Tessellator.getInstance().draw();
     }
 
