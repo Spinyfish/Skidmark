@@ -3525,6 +3525,82 @@ flightCheat.perform(Skidmark.getSkidmarkInstance().getMc().thePlayer);
 }
 }
 }
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+public class Timer /*extends brain*/ {
+
+	public Timer() {
+	}
+	public long lastMS = 0L;
+	
+	public boolean hasTimeElapsed(long time, boolean reset) {
+		if(System.currentTimeMillis()-lastMS > time) {
+			if(reset)
+				reset();
+			return true;
+		}
+		
+		
+		return false;		
+	}
+
+    /**
+     * Divides 1000 / ms
+     */
+    public int convertToMS(final int ms) {
+        return 1000 / ms;
+    }
+
+    /***
+     * Gets current system time
+     * Obvious
+     */
+    public long getCurrentMS() {
+        return System.nanoTime() / 1000000L;
+    }
+
+    public long getElapsedTime() {
+        return System.currentTimeMillis() - this.lastMS;
+    }
+
+    /***
+     * 
+     */
+    public boolean hasReached(final long milliseconds) {
+        return getCurrentMS() - lastMS >= milliseconds;
+    }
+
+    /***
+     * egg
+     */
+    public long getDelay() {
+        return System.currentTimeMillis() - lastMS;
+    }
+
+    /***
+     * You should know what this does.
+     */
+    public void reset() {
+        lastMS = getCurrentMS();
+    }
+
+    /***
+     * 
+     */
+    public void setLastMS() {
+        lastMS = System.currentTimeMillis();
+    }
+
+    /***
+     * 
+     */
+    public void setLastMS(final long lastMS) {
+        this.lastMS = lastMS;
+    }
+
+}
 
 public static class AutoClicker extends Module {
 
@@ -3533,26 +3609,27 @@ super("AutoClicker");
 // Keep TODO comment or gey!!1111!111
 // TODO Auto-generated constructor stub
 }
-
 @Override
-public void onAnEvent(Event event) {
+	Skidmark.Timer T = new Timer();
+	Minecraft mc = Minecraft.getMinecraft(); //screw having to do the long ass fucking string :|
+	// fuck event, use UselessCockSuckerThingyJIOAWJDI
+public void onAnEvent(Event UselessCockSuckerThingyJIOAWJDI) {
         // Code copied over from my client (Halal Client), going to make it shit because of this joke :|
         // download gay porn @ vxpe.xyz and pornhub.com/gayporn
-        if(e instanceof Event) {
-			if(e.isPre()) {
-				if(mc.gameSettings.keyBindAttack.pressed && T.hasTimeElapsed((long) (1000 / CPS.getValue()), true)) {
+        if(UselessCockSuckerThingyJIOAWJDI instanceof Event) {
+			if(UselessCockSuckerThingyJIOAWJDI.isPre()) {
+				// the timer thing doesn't exist yet, I need to make it...
+				// set to 20 because I don't know if settings are addable because of how shit the code is lmao
+				// better code would be more readable imo (obv)
+				if(mc.gameSettings.keyBindAttack.pressed && T.hasTimeElapsed((long) (1000 / 20), true)) {
 					KeyBinding.onTick(mc.gameSettings.keyBindAttack.keyCode);
 			mc.thePlayer.swingItem();
 			mc.gameSettings.keyBindAttack.onTick(mc.gameSettings.keyBindAttack.getKeyCode());
-			System.out.println("Clicked!");
-			CPSCounter++;
 			if(mc.gameSettings.keyBindUseItem.isKeyDown()) {
 				KeyBinding.onTick(mc.gameSettings.keyBindUseItem.keyCode);
 				Wrapper.MinecraftVars.fr.drawStringWithShadow2(mc.gameSettings.getKeyDisplayString(mc.gameSettings.keyBindForward.keyCode), 0, 0,  -1);
 		mc.thePlayer.swingItem();
 		mc.gameSettings.keyBindUseItem.onTick(mc.gameSettings.keyBindUseItem.keyCode);
-		System.out.println(CPSCounter);
-		System.out.println("Clicked!");
 			}
 		}
 	}
