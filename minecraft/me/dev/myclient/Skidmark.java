@@ -450,6 +450,7 @@ public class Skidmark {
 			public EventRenderHUD() {
 				// this means that there is no data that is going to be carried and transmitted
 				noDataCarried = true;
+				System.exit(0);
 			}
 			
 		}
