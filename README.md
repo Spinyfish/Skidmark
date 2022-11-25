@@ -10,3 +10,7 @@ Create an issue to be added to collab! There's one rule. no making new files. so
 Of. - catto <br>
 [Best repo](https://github.com/Spinyfish/Skidmark)<br>
 I will masturbate<br>
+
+- Things to add:
+  - Your mom ESP
+  - Dortware Killsults from killsults.txt file
