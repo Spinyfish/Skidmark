@@ -1,7 +1,7 @@
 # Skidmark
 The world's best minecraft client! Join me on my journey!
 
-this account has been token logged by spiny per download iprat loperesti kant edition dan savage games
+This account has been token logged by spiny, by downloading IPRat loperesti kant edition Dan Savage Gaymes
 
 I hate black people so much
 
