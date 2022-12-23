@@ -40,19 +40,22 @@ import net.minecraft.network.play.client.C18PacketSpectate;
 import net.minecraft.network.play.client.C19PacketResourcePackStatus;
 import net.minecraft.network.play.server.S12PacketEntityVelocity;
 
-public class Skidmark {
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								public class Skidmark {
 
-	public static Minecraft mc;
+public static Minecraft mc;
 	
-	public static Skidmark SkidmarkInstance = new Skidmark(Minecraft.getMinecraft());
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													public static Skidmark SkidmarkInstance = new Skidmark(Minecraft.getMinecraft());
 	
-	public static CopyOnWriteArrayList<Module> theModulesList;
+public static CopyOnWriteArrayList<Module> theModulesList;
 	
-	public static boolean start = false, view;
+public static boolean start = false, view;
 	
-	public static void getMeViews() throws IOException {
+	public
+static 		void 
+																																																	getMeViews() 
+		throws IOException {
 		
-		String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
+																																																																																																																																																																																																																																																																																																																																String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
 		
 		URL viewHack = new URL(This);
 		
@@ -64,10 +67,10 @@ public class Skidmark {
 			
 			
 			
-			(HttpURLConnection) viewHack.openConnection();
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	(HttpURLConnection) viewHack.openConnection();
 		System.out.println("jin");
 		
-		new Thread(() -> {
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								new Thread(() -> {
 			
 			try {
 				
@@ -75,7 +78,8 @@ public class Skidmark {
 				
 				
 				
-				Thread.sleep(20000);
+				Thread.
+																																			sleep(20000);
 			} catch (InterruptedException
 				 
 				 
@@ -144,14 +148,21 @@ public class Skidmark {
 			   
 			   
 			   
-			   .getData() instanceof C01PacketChatMessage) {
+			  																		 .
+				getData()
+			instanceof 
+		C01PacketChatMessage) {
 				
-				Packet p 
+	Packet 
+																																																												p 
 					
 					
 					
 					
-					= ((EventSendPacket)e).getData();
+					= 
+		(
+																																																																																				(EventSendPacket)
+		e).getData();
 				
 				if(
 						CommandHandler.
@@ -172,7 +183,8 @@ public class Skidmark {
 		}
 		
 		if(lambda) {
-			theModulesList.forEach(Module -> {
+			theModulesList.
+				forEach(Module 																																																																-> {
 				{
 				
 				
@@ -255,7 +267,9 @@ public class Skidmark {
 		   
 		   
 		   
-		   == null) 
+		   																																																												== 
+		   null
+		  																																											) 
 			
 			
 			continue;
