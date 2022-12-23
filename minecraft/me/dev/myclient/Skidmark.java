@@ -39,10 +39,10 @@ import net.minecraft.network.play.client.C17PacketCustomPayload;
 import net.minecraft.network.play.client.C18PacketSpectate;
 import net.minecraft.network.play.client.C19PacketResourcePackStatus;
 import net.minecraft.network.play.server.S12PacketEntityVelocity;
-
+/*																																																																												 */
 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								public class Skidmark {
 
-public static Minecraft mc;
+/*																																																																												 */					public static Minecraft mc;
 	
 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													public static Skidmark SkidmarkInstance = new Skidmark(Minecraft.getMinecraft());
 	
@@ -53,7 +53,7 @@ public static boolean start = false, view;
 	public
 static 		void 
 																																																	getMeViews() 
-		throws IOException {
+		/*																																																																												 */throws IOException {
 		
 																																																																																																																																																																																																																																																																																																																																String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
 		
