@@ -555,7 +555,7 @@ boolean ////////////////////////////////////////////////////////////////////////
 		public boolean toggled;
 		public String name;
 		
-		public int keybind;
+		public int keybind = 0;
 		
 		public Module(String name) {
 			this.name = name;
