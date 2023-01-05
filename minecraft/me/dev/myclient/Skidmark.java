@@ -1,6 +1,11 @@
 package me.dev.myclient;
 
-import java.io.IOException;
+import 
+	java
+	.
+	io.
+	IOException
+	;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -46,9 +51,19 @@ import net.minecraft.network.play.server.S12PacketEntityVelocity;
 	
 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													public static Skidmark SkidmarkInstance = new Skidmark(Minecraft.getMinecraft());
 	
-public static CopyOnWriteArrayList<Module> theModulesList;
+public 
+static 
+CopyOnWriteArrayList
+<Module> 
+theModulesList;
 	
-public static boolean start = false, view;
+public
+static 
+	                        boolean 
+start 
+	=
+false,
+view;
 	
 	public
 static 		void 
@@ -57,7 +72,9 @@ static 		void
 		
 																																																																																																																																																																																																																																																																																																																																String This = "https://www.youtube.com/watch?v=MGBY3_Aria0";
 		
-		URL viewHack = new URL(This);
+		URL viewHack = new
+URL(
+			This);
 		
 		HttpURLConnection 
 			
